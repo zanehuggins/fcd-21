@@ -1,0 +1,107 @@
+/* COLOR PALETTE ---------------------------------- */
+/* UNIVERSAL COMPONENTS ---------------------------------- */
+header {
+  float: left;
+  padding: 10px;
+  position: fixed;
+  background-color: white; }
+  header a {
+    float: left; }
+  header img {
+    float: left; }
+
+/* CLOSES HEADER */
+nav {
+  float: left; }
+
+.dropdown-button {
+  margin-top: 15px; }
+
+section {
+  min-height: 100vh;
+  float: left;
+  padding-top: 10vh; }
+
+.image-container-right {
+  padding-left: 5vw;
+  margin-bottom: 25px;
+  float: left;
+  height: 50vh;
+  overflow: hidden;
+  position: relative; }
+  .image-container-right img {
+    height: 100%;
+    position: absolute; }
+
+.image-container-left {
+  padding-right: 5vw;
+  float: left;
+  height: 50vh;
+  overflow: hidden;
+  position: relative; }
+  .image-container-left img {
+    height: 100%;
+    position: absolute;
+    right: 5vw; }
+
+.copy-container-right {
+  padding-left: 5vw;
+  float: left; }
+  .copy-container-right p {
+    background-color: #f1f1f1;
+    padding: 9vw; }
+
+.copy-container-left {
+  padding-right: 5vw;
+  float: left; }
+  .copy-container-left p {
+    background-color: #f1f1f1;
+    padding: 9vw; }
+
+/* TYPOGRAPHY ---------------------------------- */
+h1 {
+  font-family: itc-avant-garde-gothic-pro,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  float: left; }
+
+h2 {
+  font-family: itc-avant-garde-gothic-pro,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  float: left;
+  font-size: 45px;
+  line-height: 45px;
+  margin-top: 25px;
+  margin-bottom: 35px; }
+
+a {
+  font-family: itc-avant-garde-gothic-pro,sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+
+.pink {
+  color: #EF435E; }
+
+.turquoise {
+  color: #00AE97; }
+
+.purple {
+  color: #6B408E; }
+
+.graphite {
+  color: #707071; }
+
+.border-left-pink {
+  border-left: solid 5vw #EF435E;
+  padding-left: 10px; }
+
+.border-left-purple {
+  border-left: solid 5vw #6B408E;
+  padding-left: 10px; }
+
+.border-left-turquoise {
+  border-left: solid 5vw #00AE97;
+  padding-left: 10px; }
+
+/*# sourceMappingURL=style.css.map */
