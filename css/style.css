@@ -4,7 +4,8 @@ header {
   float: left;
   padding: 10px;
   position: fixed;
-  background-color: white; }
+  background-color: white;
+  z-index: 100; }
   header a {
     float: left; }
   header img {
