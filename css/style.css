@@ -48,6 +48,8 @@ nav {
       font-size: 30px;
       padding-top: 15px;
       padding-bottom: 15px; }
+    nav ul li A:hover {
+      color: #707071; }
 
 /* CLOSES NAV */
 #active {
