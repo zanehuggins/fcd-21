@@ -38,13 +38,13 @@
 
 
 <section class="col-12">
-  <div class="image-container-right col-12">
+  <div class="image-container-right reveal col-12">
   <img src="assets/images/home-1.png" alt="placeholder">
   </div>
 
-  <h2 class="col-12 pink border-left-pink">DESIGN <br>REDEFINED</h2>
+  <h2 class="col-12 pink border-left-pink reveal">DESIGN <br>REDEFINED</h2>
 
-  <div class="copy-container-left">
+  <div class="copy-container-left reveal">
     <p class="col-12">
       Full Circle Design Studio works with businesses and organizations to design creative brand identities, websites, and the social media tools needed to thrive in today’s competitive market. We recognize the importance of strategic branding and content delivery, and our goal is to set your business apart with a unified brand that is consistent with your goals and values.
       </p>
@@ -54,13 +54,13 @@
 
 
   <section class="col-12">
-    <div class="image-container-left col-12">
+    <div class="image-container-left reveal col-12">
     <img src="assets/images/home-2.png" alt="placeholder">
     </div>
 
-    <h2 class="col-12 purple border-left-purple">OUR <br>VISION</h2>
+    <h2 class="col-12 purple border-left-purple reveal">OUR <br>VISION</h2>
 
-    <div class="copy-container-right">
+    <div class="copy-container-right reveal">
       <p class="col-12">
 We are a family-owned design studio located in Morgantown, West Virginia. With expertise in design and marketing, we deliver a strategic solution for a creative market.
           </p>
@@ -71,13 +71,13 @@ We are a family-owned design studio located in Morgantown, West Virginia. With e
 
 
     <section class="col-12">
-      <div class="image-container-right col-12">
+      <div class="image-container-right reveal col-12">
       <img src="assets/images/home-3.png" alt="placeholder">
       </div>
 
-      <h2 class="col-12 turquoise border-left-turquoise">OUR <br>VALUES</h2>
+      <h2 class="col-12 turquoise border-left-turquoise reveal">OUR <br>VALUES</h2>
 
-      <div class="copy-container-left">
+      <div class="copy-container-left reveal">
         <p class="col-12">
 Running a fair and ethical business is important to us. Having been members of the Morgantown, WV community our whole lives, we understand that better opportunities mean a better community.
             </p>
@@ -101,6 +101,24 @@ Running a fair and ethical business is important to us. Having been members of t
   }
 }
   </script>
+
+
+  <script src="jquery-3.2.1.min.js"></script>
+  <!--<script src="scrollreveal.min.js"></script>-->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+  <script>
+  ScrollReveal().reveal('.reveal', {
+  reset: true,
+  scale: .5,
+  origin: 'right',
+} );
+
+
+
+</script>
+
 
 <!--
 <script>
