@@ -170,6 +170,15 @@ h2{
   margin-bottom: 35px;
 }
 
+h3{
+  font-family: itc-avant-garde-gothic-pro,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  float: left;
+  font-size: 24px;
+  color: black;
+}
+
 a{
   font-family: itc-avant-garde-gothic-pro,sans-serif;
 font-weight: 300;
@@ -206,3 +215,73 @@ font-style: normal;
   border-left: solid 5vw $turquoise;
   padding-left: 10px;
 }
+
+
+
+
+/* PORTFOLIO ---------------------------------- */
+
+@keyframes project-fade-in{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.portfolio-container{
+  list-style: none;
+  padding-left: 5vw;
+  margin: 0;
+
+  li:hover{
+    .project-details-container{
+      display: block;
+      opacity: 1;
+      animation-name: project-fade-in;
+      animation-duration: .5s;
+    }
+  }
+
+  li{
+  width: 90vw;
+  height: 90vw;
+  position: relative;
+  margin-bottom: 10px;
+
+
+  img{
+    position: absolute;
+    height: 100%;
+    width: auto;
+    z-index: 0;
+  }
+
+  .project-details-container{
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 10%;
+    display: none;
+    opacity: 0;
+  }
+  p{
+    float: left;
+    margin-top: 10px;
+  }
+  a{
+    margin-top: 10px;
+    background-color: $pink;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    float: left;
+  }
+}
+}/* CLOSES PORTFOLIO-CONTAINER */
