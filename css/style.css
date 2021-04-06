@@ -40,10 +40,9 @@ a:hover .arrow {
 nav {
   float: left;
   position: fixed;
-  height: 92.5vh;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
   left: 0;
-  top: 75px;
   z-index: 190;
   display: none;
   backdrop-filter: blur(4px);
@@ -103,12 +102,12 @@ nav {
     opacity: 1;
     transform: translateX(0px); } }
 .dropdown-button {
-  margin-top: 15px; }
+  margin-top: 5px; }
 
 section {
   min-height: 100vh;
   float: left;
-  padding-top: 10vh; }
+  padding-top: 50px; }
 
 .image-container-right {
   padding-left: 5vw;
@@ -138,7 +137,7 @@ section {
   bottom: 0;
   background-color: white;
   padding: 0;
-  height: 170px; }
+  height: 50vh; }
   .copy-container-fold p {
     background-color: #f1f1f1;
     padding: 50px;
@@ -171,7 +170,7 @@ h1 {
 
 h2 {
   font-family: itc-avant-garde-gothic-pro,sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-style: normal;
   float: left;
   font-size: 45px;
@@ -227,9 +226,10 @@ a {
 
 /* HOME ---------------------------------- */
 #fold {
-  position: relative; }
+  position: relative;
+  height: 100vh !important; }
   #fold .background-image {
-    height: 100vh;
+    height: 50vh;
     width: auto;
     position: absolute; }
 
@@ -295,6 +295,24 @@ a {
     float: left;
     width: 100%; }
 
+  #fold .background-image {
+    width: auto;
+    height: 70vh; }
+
+  .copy-container-fold {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 0;
+    height: 30vh; }
+    .copy-container-fold p {
+      background-color: #f1f1f1;
+      padding: 50px;
+      height: 100%;
+      font-size: 14px;
+      float: left; }
+
   .portfolio-container li {
     width: 45vw;
     height: 45vw;
@@ -309,7 +327,7 @@ a {
     border-bottom: 1px solid lightgrey; }
 
   nav {
-    top: 65px; }
+    top: 50px; }
 
   .menu-toggle {
     float: right; }
@@ -355,6 +373,9 @@ a {
     #fold .background-image {
       width: 100vw;
       height: auto; }
+
+  .copy-container-fold {
+    height: 170px; }
 
   /* CLOSES HOME ---------------------------------- */ }
 
