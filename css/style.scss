@@ -63,6 +63,8 @@ nav{
   top: 75px;
   z-index: 190;
   display: none;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 
   ul li:nth-child(1){
     animation-name: fade-in;
@@ -106,6 +108,27 @@ nav{
   color: $pink;
   font-weight: 700;
   z-index: 200;
+}
+
+
+
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: #ccc;
+  float: left;
+  position: fixed;
+  left: 0;
+  top: 65px;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 3px;
+  background: $pink;
+  width: 0%;
 }
 
 /* CLOSES NAVIGATION ---------------------------------- */
@@ -376,14 +399,20 @@ nav{
     height: auto;
   }
 
+  section{
+    padding-top: 9vh;
+  }
+
   .image-container-right{
-    height: 90vh;
+    height: 92.5vh;
     float: right;
+    padding-left: 2.5vw;
   }
 
   .image-container-left{
-    height: 90vh;
+    height: 92.5vh;
     float: left;
+    padding-left: 2.5vw;
   }
 
   .copy-container-left{

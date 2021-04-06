@@ -34,6 +34,11 @@
   <a onclick="reveal()" class="menu-toggle col-2 col-md-1 offset-5 offset-md-8 offset-xl-9">
     <img src="assets/menu.svg" alt="Button to open mobile navigation menu" class="dropdown-button">
     </a>
+
+    <div class="progress-container col-12">
+  <div class="progress-bar" id="myBar"></div>
+</div>
+
   </header>
 
 
@@ -135,14 +140,18 @@ distance: '150%',
 </script>
 
 
-<!--
 <script>
-  function reveal() {
-    var element = document.getElementById("nav");
-    element.classList.add("toggle-display");
-  }
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
 </script>
--->
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
