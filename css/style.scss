@@ -35,6 +35,23 @@ header{
   overflow: hidden;
 }
 
+.action-link{
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.arrow{
+  margin-left: 20px;
+  height: 35px;
+  transition: .5s;
+}
+
+a:hover .arrow{
+  transform: translateX(10px);
+}
+
+
 /* NAVIGATION ---------------------------------- */
 
 nav{
@@ -196,11 +213,23 @@ font-style: normal;
   color: $pink;
 }
 
+.pink:hover{
+  color: $pink;
+}
+
 .turquoise{
   color: $turquoise;
 }
 
+.turquoise:hover{
+  color: $turquoise;
+}
+
 .purple{
+  color: $purple;
+}
+
+.purple:hover{
   color: $purple;
 }
 
@@ -324,3 +353,63 @@ nav{
 }
 
 }/* CLOSES @MEDIA 768PX ---------------------------------- */
+
+@media (min-width: 992px){
+
+  header{
+    height: 65px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  nav{
+    top: 65px;
+  }
+
+  .menu-toggle{
+    float: right;
+  }
+
+
+
+  .logo-link{
+    max-width: 125px;
+    height: auto;
+  }
+
+  .image-container-right{
+    height: 90vh;
+    float: right;
+  }
+
+  .image-container-left{
+    height: 90vh;
+    float: left;
+  }
+
+  .copy-container-left{
+    padding-right: 0;
+    p{
+      padding-left: 6vw;
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+  }
+
+  .copy-container-right{
+    float: left;
+    padding-left: 0;
+    p{
+      padding: 6vw;
+    }
+  }
+
+h2{
+  margin-top: 10vh;
+}
+
+.action-link{
+  margin-top: 2.5vh;
+  margin-left: 6vw;
+  float: left;
+}
+}
