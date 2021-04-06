@@ -38,13 +38,13 @@
 
 
 <section class="col-12">
-  <div class="image-container-right reveal col-12">
+  <div class="image-container-right reveal-r col-12">
   <img src="assets/images/home-1.png" alt="placeholder">
   </div>
 
-  <h2 class="col-12 pink border-left-pink reveal">CORPORATE<br>BRANDING</h2>
+  <h2 class="col-12 pink border-left-pink reveal-l">CORPORATE<br>BRANDING</h2>
 
-  <div class="copy-container-left reveal">
+  <div class="copy-container-left reveal-l">
     <p class="col-12">
 A great brand goes far beyond an attractive logo. For a brand identity to be truly effective, it must strategically unify all written and visual language used for your marketing materials, bringing the core goals and values of your organization full circle with your identity.
       </p>
@@ -54,13 +54,13 @@ A great brand goes far beyond an attractive logo. For a brand identity to be tru
 
 
   <section class="col-12">
-    <div class="image-container-left reveal col-12">
+    <div class="image-container-left reveal-r col-12">
     <img src="assets/images/home-2.png" alt="placeholder">
     </div>
 
-    <h2 class="col-12 purple border-left-purple reveal">WEB<br>DESIGN</h2>
+    <h2 class="col-12 purple border-left-purple reveal-l">WEB<br>DESIGN</h2>
 
-    <div class="copy-container-right reveal">
+    <div class="copy-container-right reveal-l">
       <p class="col-12">
 Having a user-friendly, responsive website is essential for standing out in the modern, tech-driven consumer market. Whether you run a cafe or a hair salon, having a sleek, well designed web presence is the best way to gain new customers.
         </p>
@@ -71,13 +71,13 @@ Having a user-friendly, responsive website is essential for standing out in the 
 
 
     <section class="col-12">
-      <div class="image-container-right reveal col-12">
+      <div class="image-container-right reveal-r col-12">
       <img src="assets/images/home-3.png" alt="placeholder">
       </div>
 
-      <h2 class="col-12 turquoise border-left-turquoise reveal">DIGITAL<br>SOLUTIONS</h2>
+      <h2 class="col-12 turquoise border-left-turquoise reveal-l">DIGITAL<br>SOLUTIONS</h2>
 
-      <div class="copy-container-left reveal">
+      <div class="copy-container-left reveal-r">
         <p class="col-12">
 Living in the age of social media, advertising and promoting your organization can happen in the palm of millions of hands, at the same time. By optimizing your brand identity, we can help you to create an active and attractive presence on social media outlets.
             </p>
@@ -97,10 +97,18 @@ Living in the age of social media, advertising and promoting your organization c
 <script type="text/javascript" src="script.js"></script>
 
 <script>
-ScrollReveal().reveal('.reveal', {
+ScrollReveal().reveal('.reveal-r', {
 reset: true,
 scale: .5,
 origin: 'right',
+distance: '150%',
+} );
+
+ScrollReveal().reveal('.reveal-l', {
+reset: true,
+scale: .5,
+origin: 'left',
+distance: '150%',
 } );
 
 

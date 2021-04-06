@@ -17,6 +17,9 @@ header {
 .toggle-display {
   display: block; }
 
+.container-fluid {
+  overflow: hidden; }
+
 /* NAVIGATION ---------------------------------- */
 nav {
   float: left;
