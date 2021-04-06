@@ -185,7 +185,9 @@ a {
     width: 90vw;
     height: 90vw;
     position: relative;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    float: left;
+    overflow: hidden; }
     .portfolio-container li img {
       position: absolute;
       height: 100%;
@@ -216,5 +218,22 @@ a {
       float: left; }
 
 /* CLOSES PORTFOLIO-CONTAINER */
+@media (min-width: 768px) {
+  header {
+    height: 85px;
+    padding-left: 5vw; }
+
+  nav li {
+    float: left;
+    width: 100%; }
+
+  .portfolio-container li {
+    width: 45vw;
+    height: 45vw;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .portfolio-container li .project-details-container {
+      width: 87.5%; } }
+/* CLOSES @MEDIA 768PX ---------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
