@@ -5,8 +5,11 @@ header {
   padding: 10px;
   position: fixed;
   background-color: white;
-  height: 75px;
+  height: 50px;
   z-index: 100; }
+  header .logo-link {
+    max-width: 30px;
+    height: auto; }
   header a {
     float: left; }
   header img {
@@ -83,7 +86,7 @@ nav {
   float: left;
   position: fixed;
   left: 0;
-  top: 65px; }
+  top: 50px; }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
@@ -129,6 +132,20 @@ section {
     position: absolute;
     right: 5vw; }
 
+.copy-container-fold {
+  float: left;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding: 0;
+  height: 170px; }
+  .copy-container-fold p {
+    background-color: #f1f1f1;
+    padding: 50px;
+    height: 100%;
+    font-size: 14px;
+    float: left; }
+
 .copy-container-right {
   padding-left: 5vw;
   float: left; }
@@ -148,7 +165,9 @@ h1 {
   font-family: itc-avant-garde-gothic-pro,sans-serif;
   font-weight: 700;
   font-style: normal;
-  float: left; }
+  float: left;
+  margin-top: 5vh;
+  margin-bottom: 5vh; }
 
 h2 {
   font-family: itc-avant-garde-gothic-pro,sans-serif;
@@ -206,6 +225,15 @@ a {
   border-left: solid 5vw #00AE97;
   padding-left: 10px; }
 
+/* HOME ---------------------------------- */
+#fold {
+  position: relative; }
+  #fold .background-image {
+    height: 100vh;
+    width: auto;
+    position: absolute; }
+
+/* CLOSES HOME ---------------------------------- */
 /* PORTFOLIO ---------------------------------- */
 @keyframes project-fade-in {
   from {
@@ -260,7 +288,7 @@ a {
 /* CLOSES PORTFOLIO-CONTAINER */
 @media (min-width: 768px) {
   header {
-    height: 85px;
+    height: 50px;
     padding-left: 5vw; }
 
   nav li {
@@ -277,7 +305,7 @@ a {
 /* CLOSES @MEDIA 768PX ---------------------------------- */
 @media (min-width: 992px) {
   header {
-    height: 65px;
+    height: 50px;
     border-bottom: 1px solid lightgrey; }
 
   nav {
@@ -286,12 +314,8 @@ a {
   .menu-toggle {
     float: right; }
 
-  .logo-link {
-    max-width: 125px;
-    height: auto; }
-
   section {
-    padding-top: 9vh; }
+    padding-top: 30px; }
 
   .image-container-right {
     height: 92.5vh;
@@ -322,6 +346,16 @@ a {
   .action-link {
     margin-top: 2.5vh;
     margin-left: 6vw;
-    float: left; } }
+    float: left; }
+
+  /* HOME ---------------------------------- */
+  #fold {
+    height: 100vh;
+    overflow: hidden; }
+    #fold .background-image {
+      width: 100vw;
+      height: auto; }
+
+  /* CLOSES HOME ---------------------------------- */ }
 
 /*# sourceMappingURL=style.css.map */
