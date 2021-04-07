@@ -15,6 +15,21 @@ header {
   header img {
     float: left;
     z-index: 210; }
+  header .dropdown-container {
+    float: right; }
+  header .social {
+    float: right;
+    list-style: none;
+    padding-left: 25px; }
+    header .social li {
+      float: left;
+      font-size: 14PX;
+      padding: 5px; }
+      header .social li img {
+        width: 25px;
+        height: auto; }
+  header .menu-toggle {
+    float: right; }
 
 /* CLOSES HEADER */
 .toggle-display {
@@ -46,7 +61,8 @@ nav {
   z-index: 190;
   display: none;
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px); }
+  -webkit-backdrop-filter: blur(4px);
+  top: 50px; }
   nav ul li:nth-child(1) {
     animation-name: fade-in;
     animation-duration: 1s; }
@@ -62,14 +78,17 @@ nav {
   nav ul {
     list-style: none;
     margin-top: 20vh; }
-    nav ul li a {
-      color: #707071;
-      text-decoration: none;
-      font-size: 30px;
-      padding-top: 15px;
-      padding-bottom: 15px; }
-    nav ul li A:hover {
-      color: #707071; }
+    nav ul li {
+      width: 100%; }
+      nav ul li a {
+        color: #707071;
+        text-decoration: none;
+        font-size: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%; }
+      nav ul li a:hover {
+        color: #707071; }
 
 /* CLOSES NAV */
 #active {
@@ -324,13 +343,50 @@ a {
 @media (min-width: 992px) {
   header {
     height: 50px;
-    border-bottom: 1px solid lightgrey; }
+    border-bottom: 1px solid lightgrey;
+    padding-left: 50px;
+    padding-right: 50px; }
+
+  nav ul li:nth-child(1) {
+    animation-name: none;
+    animation-duration: 0; }
+  nav ul li:nth-child(2) {
+    animation-name: none;
+    animation-duration: 0; }
+  nav ul li:nth-child(3) {
+    animation-name: none;
+    animation-duration: 0; }
+  nav ul li:nth-child(4) {
+    animation-name: none;
+    animation-duration: 0; }
 
   nav {
-    top: 50px; }
-
-  .menu-toggle {
-    float: right; }
+    display: block;
+    position: relative;
+    height: 100%;
+    padding-top: 0;
+    margin-top: 0;
+    float: left;
+    top: 0; }
+    nav ul {
+      list-style: none;
+      margin-top: 0;
+      padding-top: 0; }
+      nav ul li {
+        width: auto;
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px; }
+        nav ul li a {
+          color: #707071;
+          text-decoration: none;
+          font-size: 14px;
+          padding: 0;
+          margin-top: 5px;
+          width: auto;
+          float: left; }
+        nav ul li a:hover {
+          color: #707071; }
 
   section {
     padding-top: 30px; }
@@ -368,7 +424,7 @@ a {
 
   /* HOME ---------------------------------- */
   #fold {
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden; }
     #fold .background-image {
       width: 100vw;
@@ -377,6 +433,59 @@ a {
   .copy-container-fold {
     height: 170px; }
 
-  /* CLOSES HOME ---------------------------------- */ }
+  /* CLOSES HOME ---------------------------------- */
+  /* PORTFOLIO ---------------------------------- */
+  @keyframes project-fade-in {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  .portfolio-container {
+    list-style: none;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    margin: 0; }
+    .portfolio-container li:hover .project-details-container {
+      display: block;
+      opacity: 1;
+      animation-name: project-fade-in;
+      animation-duration: .5s; }
+    .portfolio-container li {
+      width: 30vw;
+      height: 30vw;
+      position: relative;
+      margin-bottom: 10px;
+      float: left;
+      overflow: hidden; }
+      .portfolio-container li img {
+        position: absolute;
+        height: 100%;
+        width: auto;
+        z-index: 0; }
+      .portfolio-container li .project-details-container {
+        height: 90%;
+        width: 90%;
+        background-color: white;
+        position: absolute;
+        z-index: 10;
+        margin-top: 5%;
+        margin-left: 5%;
+        padding: 10%;
+        display: none;
+        opacity: 0; }
+      .portfolio-container li p {
+        float: left;
+        margin-top: 10px; }
+      .portfolio-container li a {
+        margin-top: 10px;
+        background-color: #EF435E;
+        width: 100%;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        float: left; }
+
+  /* CLOSES PORTFOLIO-CONTAINER */ }
 
 /*# sourceMappingURL=style.css.map */

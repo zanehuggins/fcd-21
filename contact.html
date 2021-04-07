@@ -16,25 +16,39 @@
 
 <div class="container-fluid p-0">
 
-<header class="col-12">
-  <a href="index.html" class="col-5 col-md-3 p-0">
-<img src="assets/logo.svg" alt="Full Circle Design Studio Logo/link to home page" class="col-12">
-</a>
+  <header class="col-12">
+    <a href="index.html" class="logo-link col-5 col-md-3 col-lg-1 p-0">
+  <img src="assets/icon.svg" alt="Full Circle Design Studio Logo/link to home page" class="col-12">
+  </a>
 
-<nav class="col-12" id="nav">
-<ul class="col-6">
-  <li class="col-12 offset-md-2"><a href="index.html" id="active">HOME</a></li>
-  <li class="col-12 offset-md-2"><a href="services.html">SERVICES</a></li>
-  <li class="col-12 offset-md-2"><a href="portfolio.html">PORTFOLIO</a></li>
-  <li class="col-12 offset-md-2"><a href="contact.html">CONTACT</a></li>
-  </ul>
 
-  </nav>
 
-  <a onclick="reveal()" class="col-2 col-md-1 offset-5 offset-md-8">
-    <img src="assets/menu.svg" alt="Button to open mobile navigation menu" class="dropdown-button">
-    </a>
-  </header>
+  <nav class="col-12 col-lg-5" id="nav">
+  <ul class="col-12">
+    <li class="offset-md-2 offset-lg-0"><a href="index.html">HOME</a></li>
+    <li class="offset-md-2 offset-lg-0"><a href="services.html">SERVICES</a></li>
+    <li class="offset-md-2 offset-lg-0"><a href="portfolio.html">PORTFOLIO</a></li>
+    <li class="offset-md-2 offset-lg-0"><a href="contact.html" id="active">CONTACT</a></li>
+    </ul>
+
+    </nav>
+
+    <ul class="social d-none d-md-block">
+      <li>CONNECT WITH US</li>
+      <li><a href="https://www.instagram.com/full_circle.design/" target="_blank"><img src="assets/instagram.svg" alt="#"></a></li>
+      <li><a href="https://www.behance.net/zahuggins/" target="_blank"><img src="assets/behance.svg" alt="#"></a></li>
+      <li><a href="https://linkedin.com/company/full-circle-design-vw" target="_blank"><img src="assets/linkedin.svg" alt="#"></a></li>
+    </ul>
+
+    <a onclick="reveal()" class="menu-toggle d-lg-none">
+      <img src="assets/menu.svg" alt="Button to open mobile navigation menu" class="dropdown-button">
+      </a>
+
+      <div class="progress-container col-12">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+    </header>
 
 
 <section class="col-12">
@@ -90,6 +104,20 @@ origin: 'left',
 distance: '150%',
 } );
 
+</script>
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
 </script>
 
 
