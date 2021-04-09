@@ -157,6 +157,19 @@ section {
   background-color: white;
   padding: 0;
   height: 50vh; }
+  .copy-container-fold .link-container {
+    float: left;
+    background-color: #f1f1f1;
+    height: 100%;
+    padding-top: 75px; }
+    .copy-container-fold .link-container a {
+      padding: 15px;
+      font-size: 20px;
+      text-decoration: none;
+      color: black;
+      transition: .25s; }
+    .copy-container-fold .link-container a:hover {
+      color: #00AE97; }
   .copy-container-fold p {
     background-color: #f1f1f1;
     padding: 50px;
@@ -487,5 +500,37 @@ a {
         float: left; }
 
   /* CLOSES PORTFOLIO-CONTAINER */ }
+@media (min-width: 1024px) {
+  section {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0; }
+
+  .image-container-right {
+    height: 100vh;
+    float: right;
+    padding-left: 0; }
+
+  .image-container-left {
+    height: 100vh;
+    float: left; }
+    .image-container-left img {
+      left: 0; }
+
+  .copy-container-left {
+    padding-right: 2vw; }
+    .copy-container-left p {
+      padding-left: 6vw;
+      padding-top: 4vw;
+      padding-bottom: 4vw; }
+
+  .copy-container-right {
+    float: left;
+    padding-right: 2vw; }
+    .copy-container-right p {
+      padding: 6vw; }
+
+  h2 {
+    margin-top: 10vh; } }
 
 /*# sourceMappingURL=style.css.map */

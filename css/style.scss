@@ -215,6 +215,24 @@ section{
   padding: 0;
   height: 50vh;
 
+.link-container{
+  float: left;
+  background-color: #f1f1f1;
+  height: 100%;
+  padding-top: 75px;
+  a{
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: .25s;
+  }
+
+  a:hover{
+    color: $turquoise;
+  }
+}
+
   p{
       background-color: #f1f1f1;
       padding: 50px;
@@ -665,4 +683,52 @@ h2{
   }
 }
 }/* CLOSES PORTFOLIO-CONTAINER */
+}
+
+
+@media (min-width: 1024px){
+
+section{
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+    .image-container-right{
+      height: 100vh;
+      float: right;
+      padding-left: 0;
+    }
+
+    .image-container-left{
+      height: 100vh;
+      float: left;
+
+      img{
+left: 0;
+      }
+    }
+
+    .copy-container-left{
+      padding-right: 2vw;
+      p{
+        padding-left: 6vw;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+    }
+
+    .copy-container-right{
+      float: left;
+      padding-right: 2vw;
+      p{
+        padding: 6vw;
+      }
+    }
+
+  h2{
+    margin-top: 10vh;
+  }
+
+
 }
