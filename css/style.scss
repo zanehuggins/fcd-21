@@ -188,6 +188,7 @@ section{
   height: 50vh;
   overflow: hidden;
   position: relative;
+  z-index: 10;
   img{
     height: 100%;
     position: absolute;
@@ -200,6 +201,7 @@ section{
   height: 50vh;
   overflow: hidden;
   position: relative;
+  z-index: 10;
   img{
     height: 100%;
     position: absolute;
