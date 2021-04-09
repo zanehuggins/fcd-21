@@ -285,7 +285,6 @@ a {
     width: 90vw;
     height: 90vw;
     position: relative;
-    margin-bottom: 10px;
     float: left;
     overflow: hidden; }
     .portfolio-container li img {
@@ -299,8 +298,8 @@ a {
       background-color: white;
       position: absolute;
       z-index: 10;
-      margin-top: 5%;
-      margin-left: 5%;
+      margin-top: 4%;
+      margin-left: 4%;
       padding: 10%;
       display: none;
       opacity: 0; }
@@ -348,10 +347,7 @@ a {
   .portfolio-container li {
     width: 45vw;
     height: 45vw;
-    padding-left: 10px;
-    padding-right: 10px; }
-    .portfolio-container li .project-details-container {
-      width: 87.5%; } }
+    padding: 10px; } }
 /* CLOSES @MEDIA 768PX ---------------------------------- */
 @media (min-width: 992px) {
   header {
@@ -456,7 +452,8 @@ a {
   .portfolio-container {
     list-style: none;
     padding-left: 5vw;
-    padding-top: 5vh;
+    padding-right: 5vw;
+    padding-top: 10vh;
     margin: 0; }
     .portfolio-container li:hover .project-details-container {
       display: block;
@@ -481,8 +478,8 @@ a {
         background-color: white;
         position: absolute;
         z-index: 10;
-        margin-top: 5%;
-        margin-left: 5%;
+        margin-top: 3.75%;
+        margin-left: 3.75%;
         padding: 10%;
         display: none;
         opacity: 0; }

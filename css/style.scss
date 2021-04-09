@@ -388,7 +388,6 @@ font-style: normal;
   width: 90vw;
   height: 90vw;
   position: relative;
-  margin-bottom: 10px;
   float: left;
   overflow: hidden;
 
@@ -406,8 +405,8 @@ font-style: normal;
     background-color: white;
     position: absolute;
     z-index: 10;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 4%;
+    margin-left: 4%;
     padding: 10%;
     display: none;
     opacity: 0;
@@ -476,11 +475,7 @@ nav{
   li{
     width: 45vw;
     height: 45vw;
-    padding-left: 10px;
-    padding-right: 10px;
-    .project-details-container{
-      width: 87.5%;
-    }
+    padding: 10px;
   }
 }
 
@@ -627,7 +622,8 @@ h2{
 .portfolio-container{
   list-style: none;
   padding-left: 5vw;
-  padding-top: 5vh;
+  padding-right: 5vw;
+  padding-top: 10vh;
   margin: 0;
 
   li:hover{
@@ -661,8 +657,8 @@ h2{
     background-color: white;
     position: absolute;
     z-index: 10;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 3.75%;
+    margin-left: 3.75%;
     padding: 10%;
     display: none;
     opacity: 0;
