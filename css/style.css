@@ -312,7 +312,8 @@ a {
       height: 100%;
       width: 100%;
       overflow: hidden;
-      position: absolute; }
+      position: absolute;
+      background-color: #f1f1f1; }
     .portfolio-container li img {
       position: absolute;
       height: 100%;
@@ -362,8 +363,7 @@ a {
     overflow: hidden; }
   .portfolio-container li:hover .project-image-container
   img {
-    transform: scale(0.65);
-    filter: grayscale(1); }
+    transform: scale(0.65); }
 
 /* CLOSES PORTFOLIO-CONTAINER */
 @media (min-width: 768px) {
