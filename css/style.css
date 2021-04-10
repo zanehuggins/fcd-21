@@ -152,13 +152,23 @@ section {
     position: absolute;
     right: 5vw; }
 
+#portfolio-image-container {
+  padding: 0 !important; }
+  #portfolio-image-container .asset-container {
+    height: 20vh;
+    background-color: #f1f1f1;
+    padding: 0;
+    border: 1px solid white; }
+  #portfolio-image-container img {
+    width: 100%;
+    height: auto; }
+
 .copy-container-fold {
   float: left;
   position: absolute;
   bottom: 0;
   background-color: white;
-  padding: 0;
-  height: 50vh; }
+  padding: 0; }
   .copy-container-fold .link-container {
     float: left;
     background-color: #f1f1f1;
@@ -273,7 +283,7 @@ a {
 /* HOME ---------------------------------- */
 #fold {
   position: relative;
-  height: 100vh !important; }
+  float: left; }
   #fold .background-image {
     height: 50vh;
     width: auto;
@@ -372,6 +382,25 @@ a {
     transform: scale(0.65); }
 
 /* CLOSES PORTFOLIO-CONTAINER */
+.color-container {
+  height: 30vh;
+  width: 25%;
+  float: left;
+  border: 1px solid white; }
+
+/* BSRE COLORS */
+.bsre-black {
+  background-color: #333033; }
+
+.bsre-green {
+  background-color: #c6d33a; }
+
+.bsre-turquoise {
+  background-color: #22ac9b; }
+
+.bsre-orange {
+  background-color: #e26d39; }
+
 @media (min-width: 768px) {
   header {
     height: 50px;
@@ -383,7 +412,8 @@ a {
 
   #fold .background-image {
     width: auto;
-    height: 70vh; }
+    height: 70vh;
+    float: left; }
 
   .copy-container-fold {
     float: left;
@@ -492,7 +522,8 @@ a {
     overflow: hidden; }
     #fold .background-image {
       width: 100vw;
-      height: auto; }
+      height: auto;
+      bottom: -10vh; }
 
   .copy-container-fold {
     height: 170px; }
@@ -537,9 +568,23 @@ a {
         padding: 25px; }
       .portfolio-container li p {
         float: left;
-        margin-top: 10px; }
+        margin-top: 0px;
+        padding-left: 25px; }
 
-  /* CLOSES PORTFOLIO-CONTAINER */ }
+  /* CLOSES PORTFOLIO-CONTAINER */
+  #portfolio-image-container {
+    padding: 0 !important; }
+    #portfolio-image-container .asset-container {
+      height: 35vh;
+      background-color: #f1f1f1;
+      padding: 0;
+      border: 1px solid white; }
+    #portfolio-image-container img {
+      width: 100%;
+      height: auto; }
+
+  .color-container {
+    height: 30vh; } }
 @media (min-width: 1024px) {
   section {
     padding-top: 0;

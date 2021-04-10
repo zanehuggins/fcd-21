@@ -209,13 +209,30 @@ section{
   }
 }
 
+#portfolio-image-container{
+    padding: 0!important;
+  .asset-container{
+    height: 20vh;
+    background-color: #f1f1f1;
+      padding: 0;
+      border: 1px solid white;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
 .copy-container-fold{
   float: left;
   position: absolute;
   bottom: 0;
   background-color: white;
   padding: 0;
-  height: 50vh;
+
 
 .link-container{
   float: left;
@@ -362,7 +379,9 @@ font-style: normal;
 /* HOME ---------------------------------- */
 #fold{
   position: relative;
-  height: 100vh!important;
+  float: left;
+
+
 .background-image{
   height: 50vh;
   width: auto;
@@ -505,6 +524,28 @@ img{
 }/* CLOSES PORTFOLIO-CONTAINER */
 
 
+.color-container{
+  height: 30vh;
+  width: 25%;
+  float: left;
+  border: 1px solid white;
+}
+
+/* BSRE COLORS */
+
+.bsre-black{
+background-color: #333033
+}
+.bsre-green{
+background-color: #c6d33a
+}
+.bsre-turquoise{
+background-color: #22ac9b;
+}
+.bsre-orange{
+background-color: #e26d39;
+}
+
 
 @media(min-width: 768px){
 
@@ -525,6 +566,7 @@ nav{
   .background-image{
     width: auto;
     height: 70vh;
+    float: left;
   }
 }
 
@@ -642,6 +684,8 @@ nav{
     padding-left: 2.5vw;
   }
 
+
+
   .copy-container-left{
     padding-right: 0;
     p{
@@ -676,6 +720,7 @@ h2{
 .background-image{
   width: 100vw;
   height: auto;
+  bottom: -10vh;
 }
 }
 
@@ -738,11 +783,36 @@ h5{
 }
   p{
     float: left;
-    margin-top: 10px;
+    margin-top: 0px;
+    padding-left: 25px;
   }
 
 }
 }/* CLOSES PORTFOLIO-CONTAINER */
+
+
+
+
+#portfolio-image-container{
+    padding: 0!important;
+  .asset-container{
+    height: 35vh;
+    background-color: #f1f1f1;
+      padding: 0;
+      border: 1px solid white;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.color-container{
+  height: 30vh;
+}
+
+
 }
 
 
@@ -764,11 +834,11 @@ section{
     .image-container-left{
       height: 100vh;
       float: left;
-
       img{
 left: 0;
       }
     }
+
 
     .copy-container-left{
       padding-right: 2vw;
