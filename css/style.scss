@@ -410,7 +410,6 @@ font-style: normal;
       float: left;
       height: 100%;
       width: 100%;
-        box-shadow: 0px 0px 5px #DBDADA;
         position: relative;
     }
 
@@ -436,7 +435,7 @@ font-style: normal;
       z-index: 10;
       display: none;
       opacity: 0;
-  
+
     }
 
     p{
@@ -480,6 +479,9 @@ font-style: normal;
   }
 
   li:hover{
+    .padding-container{
+              box-shadow: 0px 0px 5px #DBDADA;
+    }
     .project-details-container{
       display: block;
       opacity: 1;

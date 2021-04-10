@@ -306,7 +306,6 @@ a {
       float: left;
       height: 100%;
       width: 100%;
-      box-shadow: 0px 0px 5px #DBDADA;
       position: relative; }
     .portfolio-container li .project-image-container {
       height: 100%;
@@ -355,6 +354,8 @@ a {
         margin: auto; }
   .portfolio-container img {
     transition: 1s; }
+  .portfolio-container li:hover .padding-container {
+    box-shadow: 0px 0px 5px #DBDADA; }
   .portfolio-container li:hover .project-details-container {
     display: block;
     opacity: 1;
