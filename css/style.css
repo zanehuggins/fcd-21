@@ -246,6 +246,18 @@ a {
 .graphite {
   color: #707071; }
 
+.pink-bg {
+  background-color: #EF435E !important;
+  color: white; }
+
+.purple-bg {
+  background-color: #6B408E !important;
+  color: white; }
+
+.turquoise-bg {
+  background-color: #00AE97 !important;
+  color: white; }
+
 .border-left-pink {
   border-left: solid 5vw #EF435E;
   padding-left: 10px; }

@@ -328,6 +328,21 @@ font-style: normal;
   color: $graphite;
 }
 
+.pink-bg{
+  background-color: $pink!important;
+  color: white;
+}
+
+.purple-bg{
+  background-color: $purple!important;
+  color: white;
+}
+
+.turquoise-bg{
+  background-color: $turquoise!important;
+  color: white;
+}
+
 .border-left-pink{
   border-left: solid 5vw $pink;
   padding-left: 10px;
