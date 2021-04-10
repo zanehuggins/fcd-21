@@ -307,6 +307,8 @@ a {
       height: 100%;
       width: 100%;
       position: relative; }
+    .portfolio-container li .inside-container {
+      float: left; }
     .portfolio-container li .project-image-container {
       height: 100%;
       width: 100%;
@@ -329,10 +331,13 @@ a {
       opacity: 0; }
     .portfolio-container li p {
       float: left;
-      margin-top: 10px; }
+      padding-left: 10px;
+      font-size: 10px; }
     .portfolio-container li h5 {
       padding: 10px;
-      float: left; }
+      float: left;
+      margin: 0;
+      font-size: 16px; }
     .portfolio-container li a {
       height: 100%;
       background-color: #EF435E;

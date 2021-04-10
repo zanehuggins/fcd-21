@@ -412,6 +412,9 @@ font-style: normal;
       width: 100%;
         position: relative;
     }
+.inside-container{
+      float: left;
+    }
 
     .project-image-container{
       height: 100%;
@@ -440,11 +443,14 @@ font-style: normal;
 
     p{
       float: left;
-      margin-top: 10px;
+  padding-left: 10px;
+  font-size: 10px;
     }
     h5{
       padding: 10px;
       float: left;
+      margin: 0;
+      font-size: 16px;
     }
 
     a{
