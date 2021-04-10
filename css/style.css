@@ -289,46 +289,81 @@ a {
 .portfolio-container {
   list-style: none;
   padding-left: 5vw;
-  margin: 0; }
-  .portfolio-container li:hover .project-details-container {
-    display: block;
-    opacity: 1;
-    animation-name: project-fade-in;
-    animation-duration: .5s; }
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  float: left;
+  /* CLOSES LI */ }
   .portfolio-container li {
+    overflow: hidden;
+    padding: 5px;
     width: 90vw;
     height: 90vw;
     position: relative;
     float: left;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: 1s; }
+    .portfolio-container li .padding-container {
+      float: left;
+      height: 100%;
+      width: 100%;
+      box-shadow: 0px 0px 5px #DBDADA;
+      position: relative; }
+    .portfolio-container li .project-image-container {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      position: absolute; }
     .portfolio-container li img {
       position: absolute;
       height: 100%;
       width: auto;
       z-index: 0; }
     .portfolio-container li .project-details-container {
-      height: 90%;
-      width: 90%;
+      height: 30%;
+      margin-top: 70%;
+      width: 100%;
       background-color: white;
       position: absolute;
       z-index: 10;
-      margin-top: 4%;
-      margin-left: 4%;
-      padding: 10%;
       display: none;
       opacity: 0; }
     .portfolio-container li p {
       float: left;
       margin-top: 10px; }
+    .portfolio-container li h5 {
+      padding: 10px;
+      float: left; }
     .portfolio-container li a {
-      margin-top: 10px;
+      height: 100%;
       background-color: #EF435E;
-      width: 100%;
       text-align: center;
       color: white;
       text-decoration: none;
       padding: 10px;
-      float: left; }
+      float: left;
+      position: relative; }
+      .portfolio-container li a img {
+        float: left;
+        width: auto;
+        height: 45%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto; }
+  .portfolio-container img {
+    transition: 1s; }
+  .portfolio-container li:hover .project-details-container {
+    display: block;
+    opacity: 1;
+    animation-name: project-fade-in;
+    animation-duration: .5s;
+    overflow: hidden; }
+  .portfolio-container li:hover .project-image-container
+  img {
+    transform: scale(0.65);
+    filter: grayscale(1); }
 
 /* CLOSES PORTFOLIO-CONTAINER */
 @media (min-width: 768px) {
@@ -361,7 +396,7 @@ a {
   .portfolio-container li {
     width: 45vw;
     height: 45vw;
-    padding: 10px; } }
+    padding: 5px; } }
 /* CLOSES @MEDIA 768PX ---------------------------------- */
 @media (min-width: 992px) {
   header {
@@ -478,37 +513,25 @@ a {
       width: 30vw;
       height: 30vw;
       position: relative;
-      margin-bottom: 10px;
       float: left;
-      overflow: hidden; }
+      overflow: hidden;
+      padding: 5px; }
+      .portfolio-container li .project-image-container {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: absolute; }
       .portfolio-container li img {
         position: absolute;
         height: 100%;
         width: auto;
         z-index: 0; }
-      .portfolio-container li .project-details-container {
-        height: 90%;
-        width: 90%;
-        background-color: white;
-        position: absolute;
-        z-index: 10;
-        margin-top: 3.75%;
-        margin-left: 3.75%;
-        padding: 10%;
-        display: none;
-        opacity: 0; }
+      .portfolio-container li h5 {
+        float: left;
+        padding: 25px; }
       .portfolio-container li p {
         float: left;
         margin-top: 10px; }
-      .portfolio-container li a {
-        margin-top: 10px;
-        background-color: #EF435E;
-        width: 100%;
-        text-align: center;
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        float: left; }
 
   /* CLOSES PORTFOLIO-CONTAINER */ }
 @media (min-width: 1024px) {
