@@ -198,6 +198,8 @@ min-height: 800px;
 
 
 
+
+
 .image-container-left{
   padding-right: 5vw;
   float: left;
@@ -447,7 +449,10 @@ font-style: normal;
 #fold{
   position: relative;
   float: left;
-
+  height: 100vh;
+p{
+  margin: 0;
+}
 
 .background-image{
   height: 50vh;
@@ -636,7 +641,7 @@ img{
     li{
       float: left;
       border: 1px solid white;
-      height: 33.33vh;
+      height: auto;
       overflow: hidden;
       img{
         transition: .5s;
@@ -664,6 +669,60 @@ background-color: #22ac9b;
 }
 .bsre-orange{
 background-color: #e26d39;
+}
+
+.behance{
+  height: 25vh;
+  float: left;
+.behance-container{
+    box-shadow: 0px 0px 5px #DBDADA;
+    height: 80%;
+    div{
+      width: 80%;
+      padding: 25px;
+      float: left;
+    }
+    a{
+      float: left;
+      position: relative;
+      img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.portfolio-container-right{
+  padding: 10px;
+  margin-bottom: 25px;
+  float: left;
+  min-height: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  img{
+    height: 100%;
+    position: absolute;
+  }
+}
+
+.portfolio-container-left{
+  padding: 10px;
+  margin-bottom: 25px;
+  float: right;
+  min-height: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  img{
+    height: 100%;
+    position: absolute;
+  }
 }
 
 
@@ -931,6 +990,14 @@ h5{
     height: 100%;
     width: auto;
   }
+}
+
+.portfolio-container-left{
+  height: 100vh;
+}
+
+.portfolio-container-right{
+  height: 100vh;
 }
 
 
