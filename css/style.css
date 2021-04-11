@@ -493,7 +493,8 @@ a {
   float: left; }
   .behance .behance-container {
     box-shadow: 0px 0px 5px #DBDADA;
-    height: 80%; }
+    height: 80%;
+    margin-top: 20px; }
     .behance .behance-container div {
       width: 80%;
       padding: 25px;
@@ -721,7 +722,14 @@ a {
     height: 100vh; }
 
   .portfolio-container-right {
-    height: 100vh; } }
+    height: 100vh; }
+
+  #gallery {
+    height: 100vh;
+    overflow: hidden; }
+
+  li {
+    height: 33.33%; } }
 @media (min-width: 1024px) {
   section {
     padding-top: 0;
