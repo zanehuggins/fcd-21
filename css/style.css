@@ -757,17 +757,24 @@ a {
       left: 0; }
 
   .copy-container-left {
-    padding-right: 2vw; }
+    padding-right: 2vw;
+    height: 100vh;
+    float: left; }
     .copy-container-left p {
+      height: 40vh;
       padding-left: 6vw;
       padding-top: 4vw;
-      padding-bottom: 4vw; }
+      padding-bottom: 4vw;
+      float: left; }
 
   .copy-container-right {
     float: left;
-    padding-right: 2vw; }
+    padding-right: 2vw;
+    height: 100vh; }
     .copy-container-right p {
-      padding: 6vw; }
+      padding: 6vw;
+      float: left;
+      height: 40vh; }
 
   h2 {
     margin-top: 10vh; } }
@@ -779,6 +786,7 @@ a {
       height: 100%; }
 
   section {
-    min-height: 100vh; } }
+    min-height: 100vh;
+    float: left; } }
 
 /*# sourceMappingURL=style.css.map */

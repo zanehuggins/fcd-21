@@ -1051,18 +1051,26 @@ left: 0;
 
     .copy-container-left{
       padding-right: 2vw;
+      height: 100vh;
+      float: left;
       p{
+        height: 40vh;
         padding-left: 6vw;
         padding-top: 4vw;
         padding-bottom: 4vw;
+        float: left;
       }
+
     }
 
     .copy-container-right{
       float: left;
       padding-right: 2vw;
+      height: 100vh;
       p{
         padding: 6vw;
+        float: left;
+        height: 40vh;
       }
     }
 
@@ -1084,5 +1092,6 @@ left: 0;
   }
   section{
     min-height: 100vh;
+    float: left;
   }
 }
