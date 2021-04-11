@@ -459,7 +459,12 @@ a {
     .container-right ul li {
       float: left;
       border: 1px solid white;
-      height: 33.33vh; }
+      height: 33.33vh;
+      overflow: hidden; }
+      .container-right ul li img {
+        transition: .5s; }
+    .container-right ul li:hover img {
+      transform: scale(1.2); }
 
 /* BSRE COLORS */
 .bsre-black {

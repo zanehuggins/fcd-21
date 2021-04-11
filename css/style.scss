@@ -196,6 +196,8 @@ min-height: 800px;
   }
 }
 
+
+
 .image-container-left{
   padding-right: 5vw;
   float: left;
@@ -628,7 +630,15 @@ img{
       float: left;
       border: 1px solid white;
       height: 33.33vh;
-
+      overflow: hidden;
+      img{
+        transition: .5s;
+      }
+    }
+    li:hover{
+      img{
+        transform: scale(1.2);
+      }
     }
   }
 }
