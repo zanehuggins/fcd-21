@@ -130,7 +130,6 @@ section {
   min-height: 800px; }
 
 .image-container-right {
-  padding-left: 5vw;
   margin-bottom: 25px;
   float: left;
   height: 50vh;
@@ -150,18 +149,21 @@ section {
   z-index: 10; }
   .image-container-left img {
     height: 100%;
-    position: absolute;
-    right: 5vw; }
+    position: absolute; }
 
 .portfolio-image-container {
   padding: 0; }
   .portfolio-image-container .asset-container {
     box-shadow: 0px 0px 5px #DBDADA;
-    height: 20vh;
+    height: 25vh;
     background-color: white;
     padding: 0;
     border: 1px solid white;
-    position: relative; }
+    position: relative;
+    margin-top: 10px; }
+    .portfolio-image-container .asset-container img {
+      width: 100%;
+      height: auto; }
     .portfolio-image-container .asset-container .color-palette {
       position: absolute;
       height: 65%;
@@ -242,6 +244,11 @@ section {
   .copy-container-left p {
     background-color: #f1f1f1;
     padding: 9vw; }
+
+footer {
+  background-color: #f1f1f1;
+  float: left;
+  height: 25vh; }
 
 /* TYPOGRAPHY ---------------------------------- */
 h1 {
