@@ -210,14 +210,30 @@ min-height: 800px;
   }
 }
 
-#portfolio-image-container{
-    padding: 0!important;
+.portfolio-image-container{
+  padding: 0;
   .asset-container{
-    height: 20vh;
-    background-color: #f1f1f1;
+      box-shadow: 0px 0px 5px #DBDADA;
+      height: 20vh;
+      background-color: white;
       padding: 0;
       border: 1px solid white;
       position: relative;
+
+
+
+      .color-palette{
+        position: absolute;
+        height: 65%;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
   }
 
   img{
@@ -547,7 +563,7 @@ font-style: normal;
 
   li:hover{
     .padding-container{
-              box-shadow: 0px 0px 5px #DBDADA;
+    box-shadow: 0px 0px 5px #DBDADA;
     }
     .project-details-container{
       display: block;
@@ -555,7 +571,6 @@ font-style: normal;
       animation-name: project-fade-in;
       animation-duration: .5s;
       overflow: hidden;
-
     }
 .project-image-container
 img{
@@ -567,11 +582,41 @@ img{
 
 
 .color-container{
-  height: 30vh;
+  height: 100%;
   width: 25%;
   float: left;
-  border: 1px solid white;
+  border: 5px solid white;
+
 }
+
+
+.padding-container-2{
+  padding: 5%;
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+
+.pink-link{
+  height: 100%;
+  width: 20%;
+  background-color: $pink;
+  float: left;
+  position: relative;
+  img{
+    width: 45px!important;
+    height: auto;
+    position: absolute;
+    transition: .25s;
+  }
+}
+
+.pink-link:hover{
+  img{
+    transform: scale(1.2);
+  }
+}
+
 
 /* BSRE COLORS */
 
@@ -834,18 +879,24 @@ h5{
 
 
 
-#portfolio-image-container{
-    padding: 0!important;
+.portfolio-image-container{
+    padding-top: 5vh;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
   .asset-container{
-    height: 35vh;
-    background-color: #f1f1f1;
+    height: 25vh;
+    margin-top: 15px;
+    background-color: white;
       padding: 0;
       border: 1px solid white;
+
   }
 
   img{
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
   }
 }
 

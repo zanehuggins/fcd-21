@@ -153,15 +153,26 @@ section {
     position: absolute;
     right: 5vw; }
 
-#portfolio-image-container {
-  padding: 0 !important; }
-  #portfolio-image-container .asset-container {
+.portfolio-image-container {
+  padding: 0; }
+  .portfolio-image-container .asset-container {
+    box-shadow: 0px 0px 5px #DBDADA;
     height: 20vh;
-    background-color: #f1f1f1;
+    background-color: white;
     padding: 0;
     border: 1px solid white;
     position: relative; }
-  #portfolio-image-container img {
+    .portfolio-image-container .asset-container .color-palette {
+      position: absolute;
+      height: 65%;
+      width: 80%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
+  .portfolio-image-container img {
     height: 100%;
     width: auto;
     position: absolute;
@@ -171,7 +182,7 @@ section {
     top: 0;
     bottom: 0;
     margin: auto; }
-  #portfolio-image-container .text {
+  .portfolio-image-container .text {
     height: 100%;
     width: 100%;
     background-color: #707071;
@@ -180,11 +191,11 @@ section {
     position: absolute;
     transition: .25s;
     padding: 5%; }
-    #portfolio-image-container .text h3 {
+    .portfolio-image-container .text h3 {
       color: white; }
-    #portfolio-image-container .text p {
+    .portfolio-image-container .text p {
       color: white; }
-  #portfolio-image-container .asset-container:hover .text {
+  .portfolio-image-container .asset-container:hover .text {
     opacity: 1; }
 
 .color-palette {
@@ -412,10 +423,31 @@ a {
 
 /* CLOSES PORTFOLIO-CONTAINER */
 .color-container {
-  height: 30vh;
+  height: 100%;
   width: 25%;
   float: left;
-  border: 1px solid white; }
+  border: 5px solid white; }
+
+.padding-container-2 {
+  padding: 5%;
+  width: 80%;
+  height: 100%;
+  float: left; }
+
+.pink-link {
+  height: 100%;
+  width: 20%;
+  background-color: #EF435E;
+  float: left;
+  position: relative; }
+  .pink-link img {
+    width: 45px !important;
+    height: auto;
+    position: absolute;
+    transition: .25s; }
+
+.pink-link:hover img {
+  transform: scale(1.2); }
 
 /* BSRE COLORS */
 .bsre-black {
@@ -599,16 +631,20 @@ a {
         padding-left: 25px; }
 
   /* CLOSES PORTFOLIO-CONTAINER */
-  #portfolio-image-container {
-    padding: 0 !important; }
-    #portfolio-image-container .asset-container {
-      height: 35vh;
-      background-color: #f1f1f1;
+  .portfolio-image-container {
+    padding-top: 5vh;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0; }
+    .portfolio-image-container .asset-container {
+      height: 25vh;
+      margin-top: 15px;
+      background-color: white;
       padding: 0;
       border: 1px solid white; }
-    #portfolio-image-container img {
-      width: 100%;
-      height: auto; } }
+    .portfolio-image-container img {
+      height: 100%;
+      width: auto; } }
 @media (min-width: 1024px) {
   section {
     padding-top: 0;
