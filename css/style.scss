@@ -970,6 +970,14 @@ left: 0;
 }
 
 @media(min-width: 1200px){
+  #fold{
+    height: 100vh;
+    overflow: hidden;
+
+    .copy-container{
+      height: 100%;
+    }
+  }
   section{
     min-height: 100vh;
   }

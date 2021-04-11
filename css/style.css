@@ -691,6 +691,12 @@ a {
   h2 {
     margin-top: 10vh; } }
 @media (min-width: 1200px) {
+  #fold {
+    height: 100vh;
+    overflow: hidden; }
+    #fold .copy-container {
+      height: 100%; }
+
   section {
     min-height: 100vh; } }
 
