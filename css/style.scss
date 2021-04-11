@@ -179,6 +179,7 @@ section{
   min-height: 100vh;
   float: left;
   padding-top: 50px;
+min-height: 800px;
 }
 
 .image-container-right{
@@ -216,14 +217,51 @@ section{
     background-color: #f1f1f1;
       padding: 0;
       border: 1px solid white;
+      position: relative;
   }
 
   img{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .text{
+    height: 100%;
     width: 100%;
-    height: auto;
+    background-color: $graphite;
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    transition: .25s;
+    padding: 5%;
+    h3{
+      color: white;
+    }
+    p{
+      color: white;
+    }
+  }
+
+
+.asset-container:hover{
+  .text{
+    opacity: 1;
   }
 }
+}
 
+
+.color-palette{
+  position: relative;
+}
+
+.color-palette:hover{
+  .text{
+    opacity: 1;
+  }
+}
 
 
 .copy-container-fold{
@@ -255,7 +293,6 @@ section{
   p{
       background-color: #f1f1f1;
       padding: 50px;
-      height: 100%;
       font-size: 14px;
       float: left;
   }
@@ -576,12 +613,11 @@ nav{
   bottom: 0;
   background-color: white;
   padding: 0;
-  height: 30vh;
+
 
   p{
       background-color: #f1f1f1;
       padding: 50px;
-      height: 100%;
       font-size: 14px;
       float: left;
   }
@@ -808,12 +844,9 @@ h5{
   }
 }
 
-.color-container{
-  height: 30vh;
-}
-
 
 }
+
 
 
 @media (min-width: 1024px){
