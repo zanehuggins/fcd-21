@@ -449,6 +449,18 @@ a {
 .pink-link:hover img {
   transform: scale(1.2); }
 
+.container-right {
+  float: left;
+  padding: 0; }
+  .container-right ul {
+    list-style: none;
+    float: left;
+    padding: 0; }
+    .container-right ul li {
+      float: left;
+      border: 1px solid white;
+      height: 33.33vh; }
+
 /* BSRE COLORS */
 .bsre-black {
   background-color: #333033; }

@@ -10,6 +10,8 @@
   <link href="css/style.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/otx6kqs.css">
 
+  <link href="css/lightbox.min.css" rel="stylesheet" type="text/css">
+  <script src="js/lightbox-plus-jquery.min.js"></script>
   </head>
 
 <body>
@@ -200,58 +202,20 @@
 
       <section class="col-12">
         <div class="image-container-left reveal-l col-12 col-lg-6">
-        <img src="assets/images/portfolio/burns-scalo/photo-1.png" alt="placeholder">
+        <img src="assets/images/portfolio/burns-scalo/photo-2.png" alt="placeholder">
         </div>
 
 
-        <div class="image-container-right portfolio-image-container col-12 col-lg-6">
-
-          <div class="asset-container col-10 offset-1 reveal-r">
-        <img src="assets/images/portfolio/burns-scalo/bsre-logo.svg" alt="placeholder">
-        <div class="text">
-          <h3 class="col-12">LOGO</h3>
-          <p>
-            A strategic redesign/refinement of their old logo.
-          </p>
-        </div>
-      </div>
-
-
-        <div class="asset-container col-10 offset-1 reveal-r">
-        <img src="assets/images/portfolio/burns-scalo/bsre-type.svg" alt="placeholder">
-        <div class="text">
-          <h3 class="col-12">TYPOGRAPHY</h3>
-          <p>
-            A combination of Gotham and Macklin Variable.
-          </p>
-        </div>
-      </div>
-
-    <div class="asset-container col-10 offset-1 reveal-r">
-
-    <div class="color-palette">
-      <div class="bsre-black color-container">
-      </div>
-
-      <div class="bsre-green color-container">
-      </div>
-
-      <div class="bsre-turquoise color-container">
-      </div>
-
-      <div class="bsre-orange color-container">
-      </div>
-    </div>
-
-      <div class="text">
-        <h3 class="col-12">COLOR PALETTE</h3>
-        <p>
-          Color palette based on the interior design of their office
-        </p>
-      </div>
-    </div>
-
-        </div>
+<div class="container-right col-12 col-lg-6">
+<ul class="col-12">
+<li class="col-lg-6 reveal-1"><a href="asset/images/portfolio/burns-scalo/photo-3.png" data-lightbox="portfolio"><img src="assets/images/portfolio/burns-scalo/photo-3.png" alt="Coffee Co-Op info booklet" class="col-12 p-0"></a></li>
+<li class="col-lg-6 reveal-2"><a href="asset/images/portfolio/burns-scalo/photo-4.png" data-lightbox="portfolio"><img src="assets/images/portfolio/burns-scalo/photo-4.png" alt="Coffee Co-Op info booklet" class="col-12 p-0"></a></li>
+<li class="col-lg-6 reveal-1"><a href="asset/images/portfolio/burns-scalo/photo-5.png" data-lightbox="portfolio"><img src="assets/images/portfolio/burns-scalo/photo-5.png" alt="Coffee Co-Op info booklet" class="col-12 p-0"></a></li>
+<li class="col-lg-6 reveal-2"><a href="asset/images/portfolio/burns-scalo/photo-6.png" data-lightbox="portfolio"><img src="assets/images/portfolio/burns-scalo/photo-6.png" alt="Coffee Co-Op info booklet" class="col-12 p-0"></a></li>
+<li class="col-lg-6 reveal-1"><a href="asset/images/portfolio/burns-scalo/photo-7.png" data-lightbox="portfolio"><img src="assets/images/portfolio/burns-scalo/photo-7.png" alt="Coffee Co-Op info booklet" class="col-12 p-0"></a></li>
+<li class="col-lg-6 reveal-2"><a href="asset/images/portfolio/burns-scalo/photo-8.png" data-lightbox="portfolio"><img src="assets/images/portfolio/burns-scalo/photo-8.png" alt="Coffee Co-Op info booklet" class="col-12 p-0"></a></li>
+</ul>
+</div>
         </section>
 
 
@@ -292,6 +256,20 @@ scale: .5,
 origin: 'left',
 distance: '150%',
 } );
+
+ScrollReveal().reveal('.reveal-1', {
+  reset: true,
+  scale: .5,
+});
+
+ScrollReveal().reveal('.reveal-2', {
+  reset: true,
+  scale: .5,
+  delay: 100,
+});
+
+
+
 
 </script>
 
