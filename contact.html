@@ -16,57 +16,90 @@
 
 <div class="container-fluid p-0">
 
-  <header class="col-12">
-    <a href="index.html" class="logo-link col-5 col-md-3 col-lg-1 p-0">
-  <img src="assets/icon.svg" alt="Full Circle Design Studio Logo/link to home page" class="col-12">
-  </a>
+<header class="col-12">
+  <a href="index.html" class="logo-link col-5 col-md-3 col-lg-1 p-0">
+<img src="assets/icon.svg" alt="Full Circle Design Studio Logo/link to home page" class="col-12">
+</a>
 
 
 
-  <nav class="col-12 col-lg-6" id="nav">
-  <ul class="col-12">
-    <li class="offset-md-2 offset-lg-0"><a href="index.html">HOME</a></li>
-    <li class="offset-md-2 offset-lg-0"><a href="services.html">SERVICES</a></li>
-    <li class="offset-md-2 offset-lg-0"><a href="portfolio.html">PORTFOLIO</a></li>
-    <li class="offset-md-2 offset-lg-0"><a href="contact.html" id="active">CONTACT</a></li>
-    </ul>
+<nav class="col-12 col-lg-6" id="nav">
+<ul class="col-12">
+  <li class="offset-md-2 offset-lg-0"><a href="index.html">HOME</a></li>
+  <li class="offset-md-2 offset-lg-0"><a href="services.html">SERVICES</a></li>
+  <li class="offset-md-2 offset-lg-0"><a href="portfolio.html">PORTFOLIO</a></li>
+  <li class="offset-md-2 offset-lg-0"><a href="contact.html" id="active">CONTACT</a></li>
+  </ul>
 
-    </nav>
+  </nav>
 
-    <ul class="social d-none d-md-block">
-      <li>CONNECT WITH US</li>
-      <li><a href="https://www.instagram.com/full_circle.design/" target="_blank"><img src="assets/instagram.svg" alt="#"></a></li>
-      <li><a href="https://www.behance.net/zahuggins/" target="_blank"><img src="assets/behance.svg" alt="#"></a></li>
-      <li><a href="https://linkedin.com/company/full-circle-design-vw" target="_blank"><img src="assets/linkedin.svg" alt="#"></a></li>
-    </ul>
+  <ul class="social d-none d-md-block">
+    <li>CONNECT WITH US</li>
+    <li><a href="https://www.instagram.com/full_circle.design/" target="_blank"><img src="assets/instagram.svg" alt="#"></a></li>
+    <li><a href="https://www.behance.net/zahuggins/" target="_blank"><img src="assets/behance.svg" alt="#"></a></li>
+    <li><a href="https://linkedin.com/company/full-circle-design-vw" target="_blank"><img src="assets/linkedin.svg" alt="#"></a></li>
+  </ul>
 
-    <a onclick="reveal()" class="menu-toggle d-lg-none">
-      <img src="assets/menu.svg" alt="Button to open mobile navigation menu" class="dropdown-button">
-      </a>
+  <a onclick="reveal()" class="menu-toggle d-lg-none">
+    <img src="assets/menu.svg" alt="Button to open mobile navigation menu" class="dropdown-button">
+    </a>
 
-      <div class="progress-container col-12">
-    <div class="progress-bar" id="myBar"></div>
-  </div>
+    <div class="progress-container col-12">
+  <div class="progress-bar" id="myBar"></div>
+</div>
 
-    </header>
+  </header>
 
-
+<!-- OLD LANDING
 <section class="col-12">
-  <div class="image-container-right reveal-r col-12">
+  <div class="image-container-right reveal-r col-12 col-lg-7">
   <img src="assets/images/home-1.png" alt="placeholder">
   </div>
 
-  <h2 class="col-12 pink border-left-pink reveal-l">CONTACT<br>US</h2>
+  <h2 class="col-12 col-lg-5 pink border-left-pink reveal-l">DESIGN <br>REDEFINED</h2>
 
-  <div class="copy-container-left reveal-l">
+  <div class="copy-container-left col-lg-5 reveal-l">
     <p class="col-12">
       Full Circle Design Studio works with businesses and organizations to design creative brand identities, websites, and the social media tools needed to thrive in today’s competitive market. We recognize the importance of strategic branding and content delivery, and our goal is to set your business apart with a unified brand that is consistent with your goals and values.
       </p>
     </div>
+
+    <a href="#" class="action-link pink col-10 col-lg-4 offset-1 offset-lg-0">START A PROJECT <img src="assets/arrow-pink.svg" alt="#" class="arrow"></a>
+
+  </section>
+-->
+
+<section class="col-12" id="fold">
+  <!--
+  <img src="assets/images/home-1.png" alt="#" >
+-->
+
+<video muted autoplay playsinline class="video-background d-lg-block background-image" id="home-hero">
+<source src="assets/videos/home.mp4" type="video/mp4">
+<source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+
+
+  <div class="copy-container-fold col-lg-12 reveal-l">
+      <h1 class="col-12 col-lg-6 border-left-pink reveal-l">START A<br>PROJECT</h1>
+      <ul class="social col-12 col-lg-6">
+          <li class="email col-12 col-lg-6">
+            <h3>EMAIL US</h3>
+            <a href="mailto:fcdmorgantown@gmail.com" target="_blank"><img src="assets/instagram.svg" alt="#"><span>fcdmorgantown@gmail.com</span></a></li>
+        <li class="col-12 col-lg-6"><h3>CONNECT WITH US</h3>
+        <a href="https://www.instagram.com/full_circle.design/" target="_blank"><img src="assets/instagram.svg" alt="#"></a>
+        <a href="https://www.behance.net/zahuggins/" target="_blank"><img src="assets/behance.svg" alt="#"></a>
+        <a href="https://linkedin.com/company/full-circle-design-vw" target="_blank"><img src="assets/linkedin.svg" alt="#"></a></li>
+      </ul>
+    </div>
+
+
   </section>
 
 
-<footer>
+
+<footer class="col-12">
 
   </footer>
 
@@ -107,8 +140,6 @@ distance: '150%',
 </script>
 
 
-
-
 <script>
 window.onscroll = function() {myFunction()};
 
@@ -121,14 +152,6 @@ function myFunction() {
 </script>
 
 
-<!--
-<script>
-  function reveal() {
-    var element = document.getElementById("nav");
-    element.classList.add("toggle-display");
-  }
-</script>
--->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>

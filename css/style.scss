@@ -301,6 +301,44 @@ background-color: #b5b5b5;
   background-color: white;
   padding: 0;
 
+  ul{
+    background-color: #f1f1f1;
+    float: left;
+    list-style: none;
+    height: 100%;
+    padding: 25px;
+    padding-top: 50px;
+
+
+    li{
+      float: left;
+      h3{
+        width: 100%;
+        font-weight: 500;
+      }
+
+
+      a{
+        color: black;
+        text-decoration: none;
+        padding-right: 20px;
+        float: left;
+        img{
+          width: 35px;
+          height: auto;
+          float: left;
+        }
+        span{
+          float: left;
+          padding-left: 10px;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+
+
+
 
 .link-container{
   float: left;
