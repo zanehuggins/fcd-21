@@ -130,6 +130,7 @@ section {
   min-height: 800px; }
 
 .image-container-right {
+  background-color: #b5b5b5;
   margin-bottom: 25px;
   float: left;
   height: 50vh;
@@ -141,6 +142,7 @@ section {
     position: absolute; }
 
 .image-container-left {
+  background-color: #b5b5b5;
   padding-right: 5vw;
   float: left;
   height: 50vh;
@@ -494,6 +496,19 @@ a {
 
 .bsre-orange {
   background-color: #e26d39; }
+
+/* CHAMPION COLORS */
+.cta-black {
+  background-color: #000000; }
+
+.cta-gold {
+  background-color: #8e7f4f; }
+
+.cta-maroon {
+  background-color: #75130d; }
+
+.cta-gray {
+  background-color: #999999; }
 
 .behance {
   height: 25vh;
