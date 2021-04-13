@@ -838,7 +838,7 @@ nav{
 
 .portfolio-container{
   li{
-
+    float: left;
     height: 45vw;
     padding: 5px;
   }
@@ -1005,7 +1005,7 @@ h2{
   }
 
   li{
-  width: 30vw;
+
   height: 30vw;
   position: relative;
   float: left;
