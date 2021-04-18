@@ -665,9 +665,18 @@ img{
   width: 25%;
   float: left;
   border: 5px solid white;
-
 }
 
+#color-pallete-5{
+  .color-container{
+  height: 100%;
+  width: 20%;
+  float: left;
+  border: 5px solid white;
+  height: 90%;
+  padding-top: 5%;
+}
+}
 
 .padding-container-2{
   padding: 5%;
@@ -755,6 +764,30 @@ background-color: #e26d39;
 .cta-gray{
   background-color: #999999;
 }
+
+
+
+/* BSRE COLORS */
+
+.rh-black{
+background-color: #3e3b39;
+}
+.rh-green{
+background-color: #7fae65;
+}
+.rh-blue{
+background-color: #71bed3;
+}
+.rh-brown{
+background-color: #7a6755;
+}
+.rh-pink{
+background-color: #f4817e;
+}
+
+
+
+
 
 .behance{
   height: 25vh;
