@@ -275,7 +275,20 @@ section {
 footer {
   background-color: #f1f1f1;
   float: left;
-  height: 25vh; }
+  height: 25vh;
+  padding-top: 25px; }
+  footer ul {
+    float: left;
+    list-style: none; }
+    footer ul .title {
+      font-weight: 700; }
+    footer ul a {
+      color: black;
+      text-decoration: none;
+      transition: .25s;
+      font-size: 14px; }
+    footer ul a:hover {
+      color: #EF435E; }
 
 /* TYPOGRAPHY ---------------------------------- */
 h1 {

@@ -388,6 +388,23 @@ footer{
   background-color: #f1f1f1;
   float: left;
   height: 25vh;
+  padding-top: 25px;
+  ul{
+    float: left;
+    list-style: none;
+    .title{
+      font-weight: 700;
+    }
+    a{
+      color: black;
+      text-decoration: none;
+      transition: .25s;
+      font-size: 14px;
+    }
+    a:hover{
+      color: $pink;
+    }
+  }
 }
 
 
