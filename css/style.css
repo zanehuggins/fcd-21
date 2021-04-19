@@ -810,9 +810,12 @@ a {
   #gallery {
     height: 100vh;
     overflow: hidden; }
-
-  li {
-    height: 33.33%; } }
+    #gallery li {
+      height: 33.33vh;
+      float: left; }
+      #gallery li img {
+        height: 110%;
+        width: auto; } }
 @media (min-width: 1024px) {
   section {
     padding-top: 0;
