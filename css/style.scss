@@ -678,6 +678,19 @@ img{
 }
 }
 
+#color-palette-10{
+  .color-container{
+  height: 50%!important;
+  width: 20%;
+  float: left;
+  border: 5px solid white;
+  height: 90%;
+  padding-top: 5%;
+}
+}
+
+
+
 .padding-container-2{
   padding: 5%;
   width: 80%;
@@ -767,7 +780,7 @@ background-color: #e26d39;
 
 
 
-/* BSRE COLORS */
+/* ROLLING HILLS COLORS */
 
 .rh-black{
 background-color: #3e3b39;
@@ -785,9 +798,47 @@ background-color: #7a6755;
 background-color: #f4817e;
 }
 
+/* HOME BREWED PHOTOGRAPHY COLORS */
 
+.hb-red{
+background-color: #894d3f
+}
 
+.hb-light-red{
+background-color: #9b6859;
+}
 
+.hb-turquoise{
+background-color: #778581;
+}
+
+.hb-light-turquoise{
+  background-color: #8fa29b;
+}
+
+.hb-brown{
+  background-color: #524842;
+}
+
+.hb-mid-brown{
+  background-color: #807265;
+}
+
+.hb-light-brown{
+  background-color: #c2af9f;
+}
+
+.hb-dark-gray{
+  background-color: #4d4e4e;
+}
+
+.hb-light-gray{
+  background-color: #e6e6e6;
+}
+
+.hb-black{
+  background-color: #000000;
+}
 
 .behance{
   height: 25vh;
