@@ -668,7 +668,8 @@ a {
   #fold .background-image {
     width: auto;
     height: 70vh;
-    float: left; }
+    float: left;
+    top: 0; }
 
   .copy-container-fold {
     float: left;
