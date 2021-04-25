@@ -264,18 +264,18 @@ section {
           float: left;
           padding-left: 10px;
           padding-top: 5px; }
-  .copy-container-fold .link-container {
+  .copy-container-fold .services-links {
     float: left;
     background-color: #f1f1f1;
     height: 100%;
     padding-top: 75px; }
-    .copy-container-fold .link-container a {
+    .copy-container-fold .services-links a {
       padding: 15px;
-      font-size: 20px;
+      font-size: 18px;
       text-decoration: none;
       color: black;
       transition: .25s; }
-    .copy-container-fold .link-container a:hover {
+    .copy-container-fold .services-links a:hover {
       color: #00AE97; }
   .copy-container-fold p {
     background-color: #f1f1f1;
@@ -289,6 +289,9 @@ section {
   .copy-container-right p {
     background-color: #f1f1f1;
     padding: 9vw; }
+
+.services-links {
+  padding: 10px; }
 
 .copy-container-left {
   padding-left: 5%;

@@ -374,14 +374,14 @@ background-color: #b5b5b5;
 
 
 
-.link-container{
+.services-links{
   float: left;
   background-color: #f1f1f1;
   height: 100%;
   padding-top: 75px;
   a{
     padding: 15px;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
     transition: .25s;
@@ -407,6 +407,10 @@ background-color: #b5b5b5;
       background-color: #f1f1f1;
       padding: 9vw;
   }
+}
+
+.services-links{
+padding: 10px;
 }
 
 .copy-container-left{
