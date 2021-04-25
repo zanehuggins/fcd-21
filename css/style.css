@@ -836,6 +836,8 @@ a {
 
   .copy-container-fold {
     height: 170px; }
+    .copy-container-fold p {
+      height: 100%; }
 
   /* CLOSES HOME ---------------------------------- */
   /* PORTFOLIO ---------------------------------- */
