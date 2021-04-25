@@ -387,13 +387,14 @@ background-color: #b5b5b5;
   float: left;
   background-color: #f1f1f1;
   height: 100%;
-  padding-top: 75px;
+
   a{
     padding: 15px;
     font-size: 18px;
     text-decoration: none;
     color: black;
     transition: .25s;
+    float: left;
   }
 
   a:hover{
@@ -420,11 +421,16 @@ background-color: #b5b5b5;
 
 .services-links{
 padding: 10px;
+
+a{
+  width: 100%;
+}
 }
 
 .copy-container-left{
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 5%;
   float: left;
   .inner-container{
     float: left;
@@ -1359,5 +1365,27 @@ left: 0;
   section{
     min-height: 100vh;
     float: left;
+  }
+
+  .services-links{
+    float: left;
+    background-color: #f1f1f1;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 50px;
+
+    a{
+      padding: 15px;
+      font-size: 18px;
+      text-decoration: none;
+      color: black;
+      transition: .25s;
+      float: left;
+      width: auto;
+    }
+
+    a:hover{
+      color: $turquoise;
+    }
   }
 }

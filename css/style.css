@@ -275,14 +275,14 @@ section {
   .copy-container-fold .services-links {
     float: left;
     background-color: #f1f1f1;
-    height: 100%;
-    padding-top: 75px; }
+    height: 100%; }
     .copy-container-fold .services-links a {
       padding: 15px;
       font-size: 18px;
       text-decoration: none;
       color: black;
-      transition: .25s; }
+      transition: .25s;
+      float: left; }
     .copy-container-fold .services-links a:hover {
       color: #00AE97; }
   .copy-container-fold p {
@@ -300,10 +300,13 @@ section {
 
 .services-links {
   padding: 10px; }
+  .services-links a {
+    width: 100%; }
 
 .copy-container-left {
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 5%;
   float: left; }
   .copy-container-left .inner-container {
     float: left; }
@@ -968,6 +971,23 @@ a {
 
   section {
     min-height: 100vh;
-    float: left; } }
+    float: left; }
+
+  .services-links {
+    float: left;
+    background-color: #f1f1f1;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 50px; }
+    .services-links a {
+      padding: 15px;
+      font-size: 18px;
+      text-decoration: none;
+      color: black;
+      transition: .25s;
+      float: left;
+      width: auto; }
+    .services-links a:hover {
+      color: #00AE97; } }
 
 /*# sourceMappingURL=style.css.map */
