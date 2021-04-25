@@ -51,6 +51,31 @@ header {
 a:hover .arrow {
   transform: translateX(10px); }
 
+.link-container {
+  height: 125px;
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%; }
+  .link-container .link-inner-container {
+    box-shadow: 0px 0px 5px #DBDADA;
+    height: 80%;
+    margin-top: 20px; }
+    .link-container .link-inner-container div {
+      width: 80%;
+      padding: 25px;
+      float: left; }
+    .link-container .link-inner-container a {
+      float: left;
+      position: relative; }
+      .link-container .link-inner-container a img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto; }
+
 /* NAVIGATION ---------------------------------- */
 nav {
   float: left;
@@ -266,16 +291,25 @@ section {
     padding: 9vw; }
 
 .copy-container-left {
-  padding-right: 5vw;
+  padding-left: 5%;
+  padding-right: 5%;
   float: left; }
+  .copy-container-left .inner-container {
+    float: left; }
+  .copy-container-left h2 {
+    margin-top: 0;
+    float: left; }
   .copy-container-left p {
-    background-color: #f1f1f1;
-    padding: 9vw; }
+    float: left; }
+
+.inner-container {
+  box-shadow: 0px 0px 5px #DBDADA;
+  padding: 5%; }
 
 footer {
   background-color: #f1f1f1;
   float: left;
-  height: 25vh;
+  height: auto;
   padding-top: 25px; }
   footer ul {
     float: left;
@@ -671,6 +705,9 @@ a {
     float: left;
     width: 100%; }
 
+  footer {
+    height: 25vh; }
+
   #fold .background-image {
     width: auto;
     height: 70vh;
@@ -755,13 +792,6 @@ a {
     height: 92.5vh;
     float: left;
     padding-left: 2.5vw; }
-
-  .copy-container-left {
-    padding-right: 0; }
-    .copy-container-left p {
-      padding-left: 6vw;
-      padding-top: 4vw;
-      padding-bottom: 4vw; }
 
   .copy-container-right {
     float: left;
@@ -882,15 +912,7 @@ a {
       left: 0; }
 
   .copy-container-left {
-    padding-right: 2vw;
-    height: 100vh;
-    float: left; }
-    .copy-container-left p {
-      height: 40vh;
-      padding-left: 6vw;
-      padding-top: 4vw;
-      padding-bottom: 4vw;
-      float: left; }
+    padding-top: 5%; }
 
   .copy-container-right {
     float: left;
@@ -902,7 +924,12 @@ a {
       height: 40vh; }
 
   h2 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+
+  .link-container {
+    height: 250px; }
+    .link-container h3 {
+      padding-top: 30px; } }
 @media (min-width: 1200px) {
   #fold {
     height: 100vh;
