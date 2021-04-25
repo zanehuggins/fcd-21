@@ -10,10 +10,11 @@ $turquoise: #00AE97;
 /* UNIVERSAL COMPONENTS ---------------------------------- */
 
 iframe{
-  height: 120vh;
-  width: 120vw;
+  height: 200vh;
+  width: 200vw;
   position: fixed;
   left: -10vw;
+  top: -70vh;
   z-index: -1;
 }
 
