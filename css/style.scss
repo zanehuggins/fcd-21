@@ -511,6 +511,12 @@ font-style: normal;
   padding-left: 10px;
 }
 
+.body-container{
+  background-color: white;
+  z-index: 2;
+  float: left;
+}
+
 
 /* HOME ---------------------------------- */
 #fold{
@@ -524,10 +530,14 @@ p{
 .background-image{
   height: 50vh;
   width: auto;
-  position: absolute;
+  position: fixed;
+  z-index: -1;
 }
 
 }
+
+
+
 
 /* CLOSES HOME ---------------------------------- */
 
@@ -918,6 +928,7 @@ nav{
     height: 70vh;
     float: left;
     top: 0;
+    position: fixed;
   }
 
 
