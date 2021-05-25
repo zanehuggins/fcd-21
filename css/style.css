@@ -69,6 +69,9 @@ a:hover .arrow {
     box-shadow: 0px 0px 5px #DBDADA;
     height: 80%;
     margin-top: 20px; }
+    .link-container .link-inner-container h3 {
+      font-size: 16px;
+      padding-top: 10px; }
     .link-container .link-inner-container div {
       width: 80%;
       padding: 25px;
@@ -409,6 +412,9 @@ a {
   background-color: #00AE97 !important;
   color: white; }
 
+.grey-bg {
+  background-color: #f1f1f1; }
+
 .border-left-pink {
   border-left: solid 5vw #EF435E;
   padding-left: 10px; }
@@ -425,6 +431,13 @@ a {
   background-color: white;
   z-index: 2;
   float: left; }
+
+.contain-container {
+  overflow: hidden; }
+
+.italic {
+  font-style: italic;
+  font-weight: 300 !important; }
 
 /* HOME ---------------------------------- */
 #fold {
@@ -448,9 +461,9 @@ a {
     opacity: 1; } }
 .portfolio-container {
   list-style: none;
-  padding-left: 5vw;
   padding-top: 2.5vh;
   padding-bottom: 2.5vh;
+  padding-left: 0;
   float: left;
   /* CLOSES LI */ }
   .portfolio-container li {
@@ -474,11 +487,12 @@ a {
       overflow: hidden;
       position: absolute;
       background-color: #f1f1f1; }
-    .portfolio-container li img {
-      position: absolute;
-      height: 100%;
-      width: auto;
-      z-index: 0; }
+      .portfolio-container li .project-image-container img {
+        position: absolute;
+        height: auto;
+        width: 90%;
+        margin-left: 5%;
+        z-index: 0; }
     .portfolio-container li .project-details-container {
       height: 30%;
       margin-top: 70%;
@@ -498,7 +512,7 @@ a {
       margin: 0;
       font-size: 16px; }
     .portfolio-container li a {
-      height: 100%;
+      height: 75%;
       background-color: #EF435E;
       text-align: center;
       color: white;
@@ -509,7 +523,7 @@ a {
       .portfolio-container li a img {
         float: left;
         width: auto;
-        height: 45%;
+        height: 45% !important;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -710,10 +724,78 @@ a {
     height: 100%;
     position: absolute; }
 
+/* LEARN MORE ---------------------------------- */
+.learn-more-container {
+  float: left;
+  margin-bottom: 50px; }
+  .learn-more-container p {
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+
+.margin-top {
+  margin-top: 10vh; }
+
+.service-tier-container {
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.service-tier {
+  float: left;
+  margin-bottom: 10px; }
+  .service-tier div {
+    float: left;
+    box-shadow: 0px 0px 5px #DBDADA; }
+  .service-tier h2 {
+    margin-bottom: 25px; }
+  .service-tier p {
+    float: left;
+    padding-bottom: 25px; }
+  .service-tier ul {
+    float: left;
+    padding-left: 0;
+    list-style: none;
+    padding-bottom: 25px; }
+    .service-tier ul li {
+      font-weight: 700;
+      padding-top: 5px; }
+  .service-tier .border-bottom-turquoise {
+    border-bottom: 2px solid #00AE97; }
+  .service-tier .border-bottom-purple {
+    border-bottom: 2px solid #6B408E; }
+  .service-tier .border-bottom-pink {
+    border-bottom: 2px solid #EF435E; }
+
+#solutions .service-tier div {
+  float: left;
+  height: 25vh; }
+#solutions .service-tier h2 {
+  font-size: 20px !important;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  float: left; }
+
+/* DESIGN LAB ---------------------------------- */
+.carousel-item {
+  height: 100vh;
+  overflow: hidden;
+  float: left;
+  position: relative; }
+  .carousel-item img {
+    float: left; }
+  .carousel-item .info-container {
+    height: 50vh;
+    background-color: white; }
+
 @media (min-width: 768px) {
   header {
     height: 50px;
     padding-left: 5vw; }
+
+  .menu-toggle {
+    float: right;
+    margin-right: 5vw; }
 
   nav li {
     float: left;
@@ -749,10 +831,24 @@ a {
       font-size: 14px;
       float: left; }
 
-  .portfolio-container li {
-    float: left;
-    height: 45vw;
-    padding: 5px; } }
+  .portfolio-container {
+    padding-left: 5vw;
+    padding-right: 5vw; }
+    .portfolio-container li {
+      float: left;
+      height: 45vw;
+      padding: 5px; }
+      .portfolio-container li a {
+        height: 100%; }
+
+  .learn-more-outer {
+    padding-left: 5%;
+    padding-right: 5%; }
+    .learn-more-outer .learn-more-container {
+      margin-bottom: 25px; }
+
+  .link-container .link-inner-container h3 {
+    padding-top: 0px; } }
 /* CLOSES @MEDIA 768PX ---------------------------------- */
 @media (min-width: 992px) {
   header {
@@ -872,11 +968,11 @@ a {
         width: 100%;
         overflow: hidden;
         position: absolute; }
-      .portfolio-container li img {
-        position: absolute;
-        height: 100%;
-        width: auto;
-        z-index: 0; }
+        .portfolio-container li .project-image-container img {
+          position: absolute;
+          z-index: 0;
+          width: 100%;
+          margin-left: 0 !important; }
       .portfolio-container li h5 {
         float: left;
         padding: 25px; }
@@ -916,7 +1012,16 @@ a {
       float: left; }
       #gallery li img {
         height: 110%;
-        width: auto; } }
+        width: auto; }
+
+  .service-tier {
+    padding: 5px; }
+    .service-tier div {
+      height: 75vh; }
+
+  .link-container .link-inner-container h3 {
+    font-size: 24px;
+    padding-top: 30px; } }
 @media (min-width: 1024px) {
   section {
     padding-top: 0;
@@ -953,7 +1058,20 @@ a {
   .link-container {
     height: 250px; }
     .link-container h3 {
-      padding-top: 30px; } }
+      padding-top: 30px; }
+
+  /* DESIGN LAB ---------------------------------- */
+  .carousel-item {
+    height: 80vh;
+    overflow: hidden; }
+    .carousel-item .info-container {
+      height: 40vh;
+      float: left;
+      position: absolute;
+      margin-top: 10vh;
+      right: 2vw;
+      width: 30%;
+      padding: 50px; } }
 @media (min-width: 1200px) {
   iframe {
     height: 120vh;

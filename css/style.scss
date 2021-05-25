@@ -102,6 +102,12 @@ a:hover .arrow{
     box-shadow: 0px 0px 5px #DBDADA;
     height: 80%;
     margin-top: 20px;
+
+    h3{
+      font-size: 16px;
+      padding-top: 10px;
+    }
+
     div{
       width: 80%;
       padding: 25px;
@@ -382,11 +388,11 @@ background-color: #b5b5b5;
 
 
 
-
 .services-links{
   float: left;
   background-color: #f1f1f1;
   height: 100%;
+
 
   a{
     padding: 15px;
@@ -454,6 +460,7 @@ footer{
   float: left;
   height: auto;
   padding-top: 25px;
+
   ul{
     float: left;
     list-style: none;
@@ -560,6 +567,10 @@ font-style: normal;
   color: white;
 }
 
+.grey-bg{
+  background-color: #f1f1f1;
+}
+
 .border-left-pink{
   border-left: solid 5vw $pink;
   padding-left: 10px;
@@ -580,6 +591,19 @@ font-style: normal;
   z-index: 2;
   float: left;
 }
+
+.contain-container{
+  overflow: hidden;
+}
+
+
+.italic{
+  font-style: italic;
+  font-weight: 300!important;
+}
+
+
+
 
 
 /* HOME ---------------------------------- */
@@ -623,9 +647,9 @@ p{
 
 .portfolio-container{
   list-style: none;
-  padding-left: 5vw;
   padding-top: 2.5vh;
   padding-bottom: 2.5vh;
+  padding-left: 0;
   float: left;
 
   li{
@@ -653,16 +677,19 @@ p{
       overflow: hidden;
     position: absolute;
     background-color: #f1f1f1;
-    }
+
     img{
       position: absolute;
-      height: 100%;
-      width: auto;
+      height: auto;
+      width: 90%;
+      margin-left: 5%;
       z-index: 0;
     }
+  }
+
     .project-details-container{
       height: 30%;
-      margin-top:70%;
+      margin-top: 70%;
       width: 100%;
       background-color: white;
       position: absolute;
@@ -685,7 +712,7 @@ p{
     }
 
     a{
-      height: 100%;
+      height: 75%;
       background-color: $pink;
       text-align: center;
       color: white;
@@ -696,7 +723,7 @@ p{
       img{
         float: left;
         width: auto;
-        height: 45%;
+        height: 45%!important;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -729,7 +756,6 @@ p{
 .project-image-container
 img{
   transform: scale(.65);
-
 }
   }
 }/* CLOSES PORTFOLIO-CONTAINER */
@@ -978,11 +1004,125 @@ background-color: #778581;
 }
 
 
+
+
+/* LEARN MORE ---------------------------------- */
+
+.learn-more-container{
+  float: left;
+  margin-bottom: 50px;
+  p{
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.margin-top{
+  margin-top: 10vh;
+}
+
+.service-tier-container{
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.service-tier{
+  float: left;
+  margin-bottom: 10px;
+
+  div{
+    float: left;
+    box-shadow: 0px 0px 5px #DBDADA;
+  }
+
+  h2{
+    margin-bottom: 25px;
+  }
+  p{
+    float: left;
+    padding-bottom: 25px;
+  }
+  ul{
+    float: left;
+    padding-left: 0;
+    list-style: none;
+    padding-bottom: 25px;
+    li{
+      font-weight: 700;
+      padding-top: 5px;
+    }
+  }
+
+
+
+
+.border-bottom-turquoise{
+      border-bottom: 2px solid $turquoise;
+}
+
+.border-bottom-purple{
+      border-bottom: 2px solid $purple;
+}
+
+.border-bottom-pink{
+      border-bottom: 2px solid $pink;
+}
+
+}
+
+
+#solutions{
+
+  .service-tier{
+
+    div{
+      float: left;
+      height: 25vh;
+    }
+
+    h2{
+      font-size: 20px!important;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      float: left;
+    }
+
+
+  }
+}
+
+
+
+/* DESIGN LAB ---------------------------------- */
+
+.carousel-item{
+  height: 100vh;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  img{
+    float: left;
+  }
+  .info-container{
+    height: 50vh;
+    background-color: white;
+  }
+}
+
+
 @media(min-width: 768px){
 
 header{
   height: 50px;
   padding-left: 5vw;
+}
+
+.menu-toggle{
+  float: right;
+  margin-right: 5vw;
 }
 
 nav{
@@ -1039,12 +1179,35 @@ iframe{
 
 
 .portfolio-container{
+  padding-left: 5vw;
+  padding-right: 5vw;
   li{
     float: left;
     height: 45vw;
     padding: 5px;
+    a{
+      height: 100%;
+    }
   }
 }
+
+
+.learn-more-outer{
+  padding-left: 5%;
+  padding-right: 5%;
+  .learn-more-container{
+    margin-bottom: 25px;
+  }
+}
+
+.link-container{
+  .link-inner-container{
+    h3{
+      padding-top: 0px;
+    }
+  }
+}
+
 
 }/* CLOSES @MEDIA 768PX ---------------------------------- */
 
@@ -1214,14 +1377,16 @@ h2{
   width: 100%;
   overflow: hidden;
 position: absolute;
-}
+
 
   img{
     position: absolute;
-    height: 100%;
-    width: auto;
     z-index: 0;
+    width: 100%;
+    margin-left: 0!important;
   }
+}
+
 h5{
   float: left;
   padding: 25px;
@@ -1286,6 +1451,28 @@ li{
 }
 }
 
+
+
+.service-tier{
+  padding: 5px;
+  div{
+    height: 75vh;
+  }
+}
+
+
+
+
+
+.link-container{
+  .link-inner-container{
+    h3{
+      font-size: 24px;
+      padding-top: 30px;
+    }
+  }
+}
+
 }
 
 
@@ -1337,6 +1524,23 @@ left: 0;
     height: 250px;
     h3{
       padding-top: 30px;
+    }
+  }
+
+
+/* DESIGN LAB ---------------------------------- */
+
+  .carousel-item{
+    height: 80vh;
+    overflow: hidden;
+    .info-container{
+      height: 40vh;
+      float: left;
+      position: absolute;
+      margin-top: 10vh;
+      right: 2vw;
+      width: 30%;
+      padding: 50px;
     }
   }
 
