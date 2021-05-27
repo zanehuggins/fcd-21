@@ -724,6 +724,22 @@ a {
     height: 100%;
     position: absolute; }
 
+#portfolio-animations h3 {
+  padding-left: 10px;
+  padding-top: 10px; }
+#portfolio-animations p {
+  padding: 10px; }
+#portfolio-animations .animation-container {
+  padding: 10px;
+  float: left; }
+  #portfolio-animations .animation-container div {
+    float: left;
+    padding: 25px;
+    padding: 2px;
+    box-shadow: 0px 0px 5px #DBDADA; }
+    #portfolio-animations .animation-container div video {
+      float: left; }
+
 /* LEARN MORE ---------------------------------- */
 .learn-more-container {
   float: left;
@@ -787,6 +803,10 @@ a {
   .carousel-item .info-container {
     height: 50vh;
     background-color: white; }
+
+.blog-stamp {
+  font-size: 12px;
+  letter-spacing: 2px; }
 
 @media (min-width: 768px) {
   header {
@@ -1065,13 +1085,48 @@ a {
     height: 80vh;
     overflow: hidden; }
     .carousel-item .info-container {
-      height: 40vh;
+      height: 45vh;
       float: left;
       position: absolute;
       margin-top: 10vh;
       right: 2vw;
       width: 30%;
-      padding: 50px; } }
+      padding: 50px; }
+    .carousel-item .link-container-2 {
+      width: 30%;
+      position: absolute;
+      right: 2vw;
+      top: 72.5%;
+      height: 15vh; }
+      .carousel-item .link-container-2 .link-inner-container {
+        box-shadow: 0px 0px 5px #DBDADA;
+        height: 80%;
+        background-color: white; }
+        .carousel-item .link-container-2 .link-inner-container h3 {
+          font-size: 16px;
+          padding-top: 10px; }
+        .carousel-item .link-container-2 .link-inner-container div {
+          width: 80%;
+          padding: 25px;
+          float: left; }
+        .carousel-item .link-container-2 .link-inner-container a {
+          float: left;
+          position: relative; }
+          .carousel-item .link-container-2 .link-inner-container a img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto; }
+
+  #portfolio-animations {
+    padding: 25px; }
+    #portfolio-animations h3 {
+      padding-left: 25px; }
+    #portfolio-animations p {
+      padding-left: 25px;
+      padding-right: 25px; } }
 @media (min-width: 1200px) {
   iframe {
     height: 120vh;

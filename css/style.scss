@@ -1005,6 +1005,36 @@ background-color: #778581;
 
 
 
+#portfolio-animations{
+
+h3{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+p{
+  padding: 10px;
+}
+
+.animation-container{
+  padding: 10px;
+float: left;
+
+div{
+  float: left;
+  padding: 25px;
+  padding: 2px;
+  box-shadow: 0px 0px 5px #DBDADA;
+  video{
+    float: left;
+  }
+}
+}
+
+}
+
+
+
 
 /* LEARN MORE ---------------------------------- */
 
@@ -1110,6 +1140,11 @@ background-color: #778581;
     height: 50vh;
     background-color: white;
   }
+}
+
+.blog-stamp{
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
 
@@ -1534,13 +1569,65 @@ left: 0;
     height: 80vh;
     overflow: hidden;
     .info-container{
-      height: 40vh;
+      height: 45vh;
       float: left;
       position: absolute;
       margin-top: 10vh;
       right: 2vw;
       width: 30%;
       padding: 50px;
+    }
+
+
+
+    .link-container-2{
+      width: 30%;
+      position: absolute;
+      right: 2vw;
+      top: 72.5%;
+      height: 15vh;
+      .link-inner-container{
+          box-shadow: 0px 0px 5px #DBDADA;
+          height: 80%;
+          background-color: white;
+          h3{
+            font-size: 16px;
+            padding-top: 10px;
+          }
+
+          div{
+            width: 80%;
+            padding: 25px;
+            float: left;
+          }
+          a{
+            float: left;
+            position: relative;
+            img{
+              position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              margin: auto;
+            }
+          }
+        }
+    }
+
+
+  }
+
+
+  #portfolio-animations{
+    padding: 25px;
+
+    h3{
+      padding-left: 25px;
+    }
+    p{
+      padding-left: 25px;
+      padding-right: 25px;
     }
   }
 
