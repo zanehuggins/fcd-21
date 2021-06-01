@@ -18,6 +18,8 @@ iframe{
   z-index: -1;
 }
 
+
+
 header{
   float: left;
   padding: 10px;
@@ -260,6 +262,19 @@ background-color: #b5b5b5;
   img{
     height: 100%;
     position: absolute;
+  }
+}
+
+.image-container-left-2{
+  float: left;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+  img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -620,6 +635,30 @@ p{
   width: auto;
   position: fixed;
   z-index: -1;
+  margin-left: -45vw;
+}
+
+.background-image-2{
+  width: 100%;
+  height: auto!important;
+  bottom: 42vh;
+  position: absolute;
+}
+
+.background-image-3{
+  width: 100%;
+  height: auto!important;
+  bottom: 42vh;
+  position: absolute;
+}
+
+#animation{
+  top: -20vh;
+  left: -75vw;
+  width: 250vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
 }
 
 }
@@ -768,7 +807,7 @@ img{
   border: 5px solid white;
 }
 
-#color-pallete-5{
+#color-palette-5{
   .color-container{
   height: 100%;
   width: 20%;
@@ -776,6 +815,17 @@ img{
   border: 5px solid white;
   height: 90%;
   padding-top: 5%;
+}
+}
+
+#color-palette-6{
+  .color-container{
+  height: 100%;
+  width: 16.5%;
+  float: left;
+  border: 5px solid white;
+  height: 70%;
+  margin-top: 2.5%;
 }
 }
 
@@ -943,6 +993,93 @@ background-color: #778581;
 
 
 
+/* IMAGO IMAGING COLORS */
+
+.i-yellow{
+  background-color: #ffcf01;
+}
+
+.i-orange{
+  background-color: #f36c42;
+}
+
+.i-green{
+  background-color: #a1b266;
+}
+
+.i-blue{
+  background-color: #4f97a1;
+}
+
+.i-purple{
+  background-color: #9a75ab;
+}
+
+.i-l-yellow{
+  background-color: #ffdd77;
+}
+
+.i-l-orange{
+  background-color: #f8a07e;
+}
+
+.i-l-green{
+  background-color: #b9c68c;
+}
+
+.i-l-blue{
+  background-color: #6aa6af;
+}
+
+.i-l-purple{
+  background-color: #bba4c8;
+}
+
+
+
+/* RISING CREEK COLORS */
+
+.rc-hero{
+  background-color: #CA4C36;
+  z-index: -2;
+}
+
+.rc-black{
+background-color: #333333;
+}
+.rc-green{
+background-color: #848a7a;
+}
+.rc-blue{
+background-color: #96b6b1;
+}
+.rc-brown{
+background-color: #896b56;
+}
+.rc-yellow{
+background-color: #f6ab3b;
+}
+.rc-orange{
+background-color: #cc4c36;
+}
+
+
+
+.rt-black{
+  background-color: #221f20;
+}
+
+.rt-gold{
+  background-color: #7d691b;
+}
+
+.rt-yellow{
+  background-color: #f4c145;
+}
+
+.rt-l-yellow{
+  background-color: #f9d147;
+}
 
 .behance{
   height: 25vh;
@@ -1005,8 +1142,8 @@ background-color: #778581;
 
 
 
-#portfolio-animations{
-
+#portfolio-general{
+padding-top: 50px!important;
 h3{
   padding-left: 10px;
   padding-top: 10px;
@@ -1016,7 +1153,7 @@ p{
   padding: 10px;
 }
 
-.animation-container{
+.item-container{
   padding: 10px;
 float: left;
 
@@ -1033,6 +1170,17 @@ div{
 
 }
 
+
+#portfolio-outtakes{
+  h3{
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  p{
+    padding: 10px;
+  }
+}
 
 
 
@@ -1150,6 +1298,8 @@ div{
 
 @media(min-width: 768px){
 
+
+
 header{
   height: 50px;
   padding-left: 5vw;
@@ -1189,9 +1339,31 @@ iframe{
     float: left;
     top: 0;
     position: fixed;
+    margin-left: -35vw;
+  }
+
+  .background-image-2{
+    width: 100%;
+    height: auto!important;
+    bottom: 30vh;
+    position: absolute;
+  }
+
+  .background-image-3{
+    width: 100%;
+    height: auto!important;
+    bottom: 30vh;
+    position: absolute;
   }
 
 
+  #animation{
+    top: -15vh;
+    left: -50vw;
+    width: 200vw;
+    position: fixed;
+    z-index: -1;
+  }
 
 }
 
@@ -1332,6 +1504,12 @@ nav{
     padding-left: 2.5vw;
   }
 
+  .image-container-left-2{
+    float: left;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+  }
 
 
 
@@ -1362,7 +1540,24 @@ h2{
   width: 100vw;
   height: auto;
   bottom: -10vh;
+  margin-left: 0;
 }
+
+.background-image-2{
+  width: 100%;
+  height: auto!important;
+  bottom: 168px;
+  position: absolute;
+}
+
+.background-image-3{
+  width: 100%;
+  height: auto!important;
+  bottom: 168px;
+  position: absolute;
+}
+
+
 }
 
 .copy-container-fold{
@@ -1514,6 +1709,19 @@ li{
 
 @media (min-width: 1024px){
 
+
+#fold{
+  #animation{
+    height: 200vh;
+    width: 200vw;
+    position: fixed;
+    top: -40vh;
+    left: -50vw;
+    z-index: -1;
+  }
+}
+
+
 section{
   padding-top: 0;
   padding-bottom: 0;
@@ -1619,7 +1827,7 @@ left: 0;
   }
 
 
-  #portfolio-animations{
+  #portfolio-general{
     padding: 25px;
 
     h3{
@@ -1630,6 +1838,23 @@ left: 0;
       padding-right: 25px;
     }
   }
+
+
+
+  #portfolio-outtakes{
+    padding: 25px;
+
+    h3{
+      padding-left: 25px;
+    }
+    p{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+
+
+
 
 
 }
@@ -1648,6 +1873,17 @@ left: 0;
   #fold{
     height: 100vh;
     overflow: hidden;
+
+
+
+    #animation{
+      height: 200vh;
+      width: 200vw;
+      position: fixed;
+      top: -45vh;
+      left: -50vw;
+      z-index: -1;
+    }
 
     .copy-container{
       height: 100%;

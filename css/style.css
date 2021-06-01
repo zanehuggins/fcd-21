@@ -189,6 +189,17 @@ section {
     height: 100%;
     position: absolute; }
 
+.image-container-left-2 {
+  float: left;
+  height: 50vh;
+  overflow: hidden;
+  position: relative; }
+  .image-container-left-2 img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0; }
+
 .portfolio-image-container {
   padding: 0; }
   .portfolio-image-container .asset-container {
@@ -450,6 +461,24 @@ a {
     height: 50vh;
     width: auto;
     position: fixed;
+    z-index: -1;
+    margin-left: -45vw; }
+  #fold .background-image-2 {
+    width: 100%;
+    height: auto !important;
+    bottom: 42vh;
+    position: absolute; }
+  #fold .background-image-3 {
+    width: 100%;
+    height: auto !important;
+    bottom: 42vh;
+    position: absolute; }
+  #fold #animation {
+    top: -20vh;
+    left: -75vw;
+    width: 250vw;
+    height: 100vh;
+    position: fixed;
     z-index: -1; }
 
 /* CLOSES HOME ---------------------------------- */
@@ -551,13 +580,21 @@ a {
   float: left;
   border: 5px solid white; }
 
-#color-pallete-5 .color-container {
+#color-palette-5 .color-container {
   height: 100%;
   width: 20%;
   float: left;
   border: 5px solid white;
   height: 90%;
   padding-top: 5%; }
+
+#color-palette-6 .color-container {
+  height: 100%;
+  width: 16.5%;
+  float: left;
+  border: 5px solid white;
+  height: 70%;
+  margin-top: 2.5%; }
 
 #color-palette-10 .color-container {
   height: 50% !important;
@@ -678,6 +715,72 @@ a {
 .hb-black {
   background-color: #000000; }
 
+/* IMAGO IMAGING COLORS */
+.i-yellow {
+  background-color: #ffcf01; }
+
+.i-orange {
+  background-color: #f36c42; }
+
+.i-green {
+  background-color: #a1b266; }
+
+.i-blue {
+  background-color: #4f97a1; }
+
+.i-purple {
+  background-color: #9a75ab; }
+
+.i-l-yellow {
+  background-color: #ffdd77; }
+
+.i-l-orange {
+  background-color: #f8a07e; }
+
+.i-l-green {
+  background-color: #b9c68c; }
+
+.i-l-blue {
+  background-color: #6aa6af; }
+
+.i-l-purple {
+  background-color: #bba4c8; }
+
+/* RISING CREEK COLORS */
+.rc-hero {
+  background-color: #CA4C36;
+  z-index: -2; }
+
+.rc-black {
+  background-color: #333333; }
+
+.rc-green {
+  background-color: #848a7a; }
+
+.rc-blue {
+  background-color: #96b6b1; }
+
+.rc-brown {
+  background-color: #896b56; }
+
+.rc-yellow {
+  background-color: #f6ab3b; }
+
+.rc-orange {
+  background-color: #cc4c36; }
+
+.rt-black {
+  background-color: #221f20; }
+
+.rt-gold {
+  background-color: #7d691b; }
+
+.rt-yellow {
+  background-color: #f4c145; }
+
+.rt-l-yellow {
+  background-color: #f9d147; }
+
 .behance {
   height: 25vh;
   float: left; }
@@ -724,21 +827,29 @@ a {
     height: 100%;
     position: absolute; }
 
-#portfolio-animations h3 {
+#portfolio-general {
+  padding-top: 50px !important; }
+  #portfolio-general h3 {
+    padding-left: 10px;
+    padding-top: 10px; }
+  #portfolio-general p {
+    padding: 10px; }
+  #portfolio-general .item-container {
+    padding: 10px;
+    float: left; }
+    #portfolio-general .item-container div {
+      float: left;
+      padding: 25px;
+      padding: 2px;
+      box-shadow: 0px 0px 5px #DBDADA; }
+      #portfolio-general .item-container div video {
+        float: left; }
+
+#portfolio-outtakes h3 {
   padding-left: 10px;
   padding-top: 10px; }
-#portfolio-animations p {
+#portfolio-outtakes p {
   padding: 10px; }
-#portfolio-animations .animation-container {
-  padding: 10px;
-  float: left; }
-  #portfolio-animations .animation-container div {
-    float: left;
-    padding: 25px;
-    padding: 2px;
-    box-shadow: 0px 0px 5px #DBDADA; }
-    #portfolio-animations .animation-container div video {
-      float: left; }
 
 /* LEARN MORE ---------------------------------- */
 .learn-more-container {
@@ -837,7 +948,24 @@ a {
     height: 70vh;
     float: left;
     top: 0;
-    position: fixed; }
+    position: fixed;
+    margin-left: -35vw; }
+  #fold .background-image-2 {
+    width: 100%;
+    height: auto !important;
+    bottom: 30vh;
+    position: absolute; }
+  #fold .background-image-3 {
+    width: 100%;
+    height: auto !important;
+    bottom: 30vh;
+    position: absolute; }
+  #fold #animation {
+    top: -15vh;
+    left: -50vw;
+    width: 200vw;
+    position: fixed;
+    z-index: -1; }
 
   .copy-container-fold {
     float: left;
@@ -931,6 +1059,12 @@ a {
     float: left;
     padding-left: 2.5vw; }
 
+  .image-container-left-2 {
+    float: left;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; }
+
   .copy-container-right {
     float: left;
     padding-left: 0; }
@@ -952,7 +1086,18 @@ a {
     #fold .background-image {
       width: 100vw;
       height: auto;
-      bottom: -10vh; }
+      bottom: -10vh;
+      margin-left: 0; }
+    #fold .background-image-2 {
+      width: 100%;
+      height: auto !important;
+      bottom: 168px;
+      position: absolute; }
+    #fold .background-image-3 {
+      width: 100%;
+      height: auto !important;
+      bottom: 168px;
+      position: absolute; }
 
   .copy-container-fold {
     height: 170px; }
@@ -1043,6 +1188,14 @@ a {
     font-size: 24px;
     padding-top: 30px; } }
 @media (min-width: 1024px) {
+  #fold #animation {
+    height: 200vh;
+    width: 200vw;
+    position: fixed;
+    top: -40vh;
+    left: -50vw;
+    z-index: -1; }
+
   section {
     padding-top: 0;
     padding-bottom: 0;
@@ -1120,11 +1273,19 @@ a {
             bottom: 0;
             margin: auto; }
 
-  #portfolio-animations {
+  #portfolio-general {
     padding: 25px; }
-    #portfolio-animations h3 {
+    #portfolio-general h3 {
       padding-left: 25px; }
-    #portfolio-animations p {
+    #portfolio-general p {
+      padding-left: 25px;
+      padding-right: 25px; }
+
+  #portfolio-outtakes {
+    padding: 25px; }
+    #portfolio-outtakes h3 {
+      padding-left: 25px; }
+    #portfolio-outtakes p {
       padding-left: 25px;
       padding-right: 25px; } }
 @media (min-width: 1200px) {
@@ -1139,6 +1300,13 @@ a {
   #fold {
     height: 100vh;
     overflow: hidden; }
+    #fold #animation {
+      height: 200vh;
+      width: 200vw;
+      position: fixed;
+      top: -45vh;
+      left: -50vw;
+      z-index: -1; }
     #fold .copy-container {
       height: 100%; }
 
